@@ -312,7 +312,7 @@ class DefaultSettings {
   static const gridImageSizeMobile = 130;
   static const gridImageSizeDesktop = 150;
   static int get homeScreenImageSize => isDesktop ? homeScreenImageSizeDesktop : homeScreenImageSizeMobile;
-  static const homeScreenImageSizeMobile = 90;
+  static const homeScreenImageSizeMobile = 160;
   static const homeScreenImageSizeDesktop = 120;
   static int get gridImageSize => isDesktop ? gridImageSizeDesktop : gridImageSizeMobile;
   static const useAndroidGainEffect = true;

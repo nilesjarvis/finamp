@@ -443,7 +443,7 @@ class FinampSettingsAdapter extends TypeAdapter<FinampSettings> {
             : fields[146] as FinampHomeScreenConfiguration,
         gridImageSize: fields[147] == null ? 130 : (fields[147] as num).toInt(),
         homeScreenImageSize: fields[150] == null
-            ? 90
+            ? 160
             : (fields[150] as num).toInt(),
         useAndroidGainEffect: fields[149] == null ? true : fields[149] as bool,
         deviceId: fields[152] == null ? 'unset' : fields[152] as String,
