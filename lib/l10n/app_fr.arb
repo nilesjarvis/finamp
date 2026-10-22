@@ -283,10 +283,6 @@
     "@viewLogs": {
         "description": "Label for button shown during the login process that allows the user to view the app logs"
     },
-    "playbackModeTranscoding": "Transcodage",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "playingFrom": "Lecture de",
     "@playingFrom": {
         "description": "Prefix shown before the name of the main queue source, like the album or playlist that was used to start playback. Example: \"Playing from {My Nice Playlist}\""
@@ -380,10 +376,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeDirectPlaying": "Lecture directe",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -393,10 +385,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Lecture locale",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToArtist": "Aller à l’artiste",
     "goToGenre": "Aller au genre",
@@ -714,16 +702,6 @@
     "@playbackOrderLinearButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in linear/in-order mode"
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "emptyFilteredListTitle": "Aucun élément trouvé",
     "@emptyFilteredListTitle": {
         "description": "Message shown when a list of items is filtered and no items match the filter"
@@ -771,15 +749,6 @@
     "playbackOrderShuffledButtonLabel": "Mélange des musiques",
     "@playbackOrderShuffledButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "Vitesse x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "loopModeAllButtonLabel": "Répéter tout",
     "@loopModeAllButtonLabel": {
@@ -1234,15 +1203,6 @@
     "@periodicPlaybackSessionUpdateFrequencyDetails": {
         "description": "Additional details for the setting that controls how frequently (in seconds) the current playback session is reported to the Jellyfin server"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "remainingDuration": "{duration} restante",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1263,16 +1223,6 @@
         "description": "Label for the button for opening the lyrics screen"
     },
     "keepScreenOnWhilePluggedIn": "L'écran ne reste allumé que lorsqu'il est branché",
-    "currentVolumeFeatureText": "{volume}% volume",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "lyricsFontSizeTitle": "Taille de la police des paroles",
     "@lyricsFontSizeTitle": {
         "description": "Title for the setting that controls the font size of lyrics in the lyrics view"
@@ -1358,37 +1308,13 @@
     "@keepScreenOn": {
         "description": "Option to keep the screen on while using the app"
     },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
     "lyricsAlignmentTitle": "Alignement des paroles",
     "@lyricsAlignmentTitle": {
         "description": "Title for the setting that controls the alignment of lyrics in the lyrics view"
     },
-    "showFeatureChipsToggleTitle": "Afficher les informations avancées sur le titre",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "libraryDownloads": "Téléchargements de la bibliothèque",
     "@libraryDownloads": {
         "description": "Title for the library downloads section on the downloads screen."
-    },
-    "bitDepth": "Format d’échantillonnage",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Taille",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "sampleRate": "Fréquence d'échantillonnage",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "normalizationGain": "Gain",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
     },
     "albumScreen": "Écran d'albums",
     "@albumScreen": {
@@ -1410,10 +1336,6 @@
     "nowPlayingBarTooltip": "Ouvrir l’écran du lecteur",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "playbackMode": "Mode de lecture",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
     },
     "deleteFromTargetConfirmButton": "Supprimer{target, select, device{ de l'appareil} server{ du serveur} other{}}",
     "@deleteFromTargetConfirmButton": {
@@ -1466,10 +1388,6 @@
     "lyricsFontSizeSubtitle": "Contrôle la taille de police des paroles dans la vue des paroles.",
     "@lyricsFontSizeSubtitle": {
         "description": "Subtitle for the setting that controls the font size of lyrics in the lyrics view"
-    },
-    "bitRate": "Débit binaire",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
     },
     "publiclyVisiblePlaylist": "Publiquement visible :",
     "@publiclyVisiblePlaylist": {
@@ -1629,10 +1547,6 @@
     "resetSettingsPromptLocal": "Voulez-vous réinitialiser ces paramètres à leur état par défaut ?",
     "@resetSettingsPromptLocal": {
         "description": "Prompt which gets shown when the user is about to reset all settings in the current settings window to their default values"
-    },
-    "showFeatureChipsToggleSubtitle": "Afficher les informations avancées sur les titres, telles que le codec, le débit binaire, etc. sur l'écran du lecteur.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "deleteFromTargetDialogText": "Vous allez supprimer ce {itemType, select, album{album} playlist{playlist} artist{artist} genre{genre} track{track} library{library} other{item}} {device, select, device{de cet appareil} server{du système de fichiers et bibliothèque des serveurs.{deleteType, select, canDelete{ Cela supprimera également cet élément de cet appareil.} cantDelete{ Cet élément restera sur cet appareil jusqu’à la prochaine synchronisation.} notDownloaded{} other{}}\nCette action ne peut pas être annulée.} other{}}",
     "@deleteFromTargetDialogText": {
@@ -1845,10 +1759,6 @@
     "seeAll": "Tout voir",
     "@seeAll": {
         "description": ""
-    },
-    "additionalPeople": "Personnes",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
     },
     "genreListsInheritSorting": "Héritage du tri des listes complètes",
     "@genreListsInheritSorting": {
@@ -2223,15 +2133,6 @@
     "discordRPCIconWhiteTransparent": "Finamp Blanc - Transparent",
     "@discordRPCIconWhiteTransparent": {
         "description": "A REALLY short description of the icon in use. Its format is 'ICON, BACKGROUND'. This one is the full white Finamp logo with a Transparent Background"
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "itemDeletedSnackbar": "{itemType, select, album{Album} playlist{Playlist} artist{Artist} genre{Genre} track{Track} library{Library} other{Item}} a été supprimé de {deviceType, select, device{Device} server{Server} other{unknown}}",
     "@itemDeletedSnackbar": {
@@ -2752,10 +2653,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "Déchargez le traitement audio sur le matériel, si celui-ci le prend en charge.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "Explicite",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "volumeNormalizationIOSBaseGainEditorDescription": "Actuellement, la normalisation du volume (Replay Gain) sur les plateformes autres qu'Android nécessite de modifier le volume de lecture pour simuler une variation de gain. Comme il est impossible d'augmenter le volume au-delà de 100 %, il est nécessaire de le réduire par défaut afin de pouvoir amplifier le volume des titres à faible volume.\n\nLa valeur est exprimée en décibels (dB), où -10 dB correspond à environ 30 % du volume, -4,5 dB à environ 60 % et -2 dB à environ 80 %.\nLes valeurs positives indiquent qu'aucune réduction de volume n'est appliquée jusqu'au seuil (par exemple, un gain de -6,4 dB, et des valeurs plus positives pour un décalage de +6,4 dB), mais empêchent l'amplification des titres à faible volume.\n\nIl est conseillé de définir cette valeur à l'inverse du gain le plus élevé (le plus positif) de votre bibliothèque. Par exemple, définissez-la à +3 dB si le gain le plus élevé de votre bibliothèque est de -3 dB (et que tous les autres titres ont des gains de -5 dB, -8 dB, -10 dB, etc.).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
@@ -3582,26 +3479,6 @@
         "description": "Notification on sort and filter menu that currently pending changes will be automatically applied on close."
     },
     "removeFromQueue": "Retirer de la file d'attente",
-    "featureChipName": "{chipName, select, explicit{Explicite} playCount{Nombre de lectures} additionalPeople{Autres personnes} playbackMode{Mode de lecture} codec{Codec} bitRate{Débit binaire} bitDepth{Nombre de bits} sampleRate{Fréquence d'échantillonnage} size{Taille} normalizationGain{Gain de normalisation} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
-    "featureChipDescription": "{chipName, select, explicit{Signale les titres contenant du contenu explicite} additionalPeople{Personnes non artistes associées au morceau, le cas échéant (compositeurs, paroliers, etc.)} playbackMode{Informations sur l'état de la diffusion en continu et du transcodage} bitDepth{Nombre de bits par échantillon audio. Ne s'applique qu'aux codecs sans perte ; la valeur est généralement de 16 bits.} sampleRate{Échantillons audio par seconde. Généralement 44,1 kHz.} normalizationGain{Niveau ReplayGain actuellement actif} size{La taille d'origine du fichier du titre} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
-    },
     "maximizePlayer": "Optimiser le lecteur",
     "collapsePlayer": "Réduire le lecteur dans la barre latérale",
     "addSpecialDownloads": "Ajouter un téléchargement spécial",

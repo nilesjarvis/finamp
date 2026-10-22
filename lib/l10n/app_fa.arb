@@ -365,10 +365,6 @@
     "noAlbum": "هیچ آلبومی نیست",
     "noItem": "هیچ آیتمی نیست",
     "unknownArtist": "هنرمند ناشناخته",
-    "playbackModeTranscoding": "درحال رمزگردانی",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "addToQueue": "افزودن به صف",
     "@addToQueue": {
         "description": "Popup menu item title for adding an item to the end of the play queue."
@@ -570,14 +566,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeDirectPlaying": "پخش مستقیم",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeLocal": "پخش محلی",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "queue": "صف",
     "instantMix": "میکس آنی",
     "kiloBitsPerSecondLabel": "{bitrate} ک.بیت بر ثانیه",
@@ -647,15 +635,6 @@
     "playbackOrderShuffledButtonLabel": "در حال بُر زدن قطعه‌ها",
     "@playbackOrderShuffledButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "تندی {speed}x",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "playbackSpeedDecreaseLabel": "کاهش تندی پخش",
     "@playbackSpeedDecreaseLabel": {
@@ -969,16 +948,6 @@
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "startInstantMixForIndividualTracksSwitchTitle": "آغاز میکس آنی برای قطعه‌های منفرد",
     "@startInstantMixForIndividualTracksSwitchTitle": {
         "description": "Title for the switch that toggles if tapping a track on the tracks tab will start an instant mix of that track instead of just playing a single track."
@@ -1287,15 +1256,6 @@
     },
     "allowSplitScreenTitle": "مجاز بودن حالت صفحه نمایش دو بخشی (SplitScreen)",
     "enableVibration": "فعال کردن لرزش",
-    "numberAsKiloHertz": "{kiloHertz} کیلوهرتز",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "prioritizePlayerCoverSubtitle": "نمایش نگاره‌ی آلبوم بزرگ‌تر روی صفحه‌ی پخش را در اولویت قرار می‌دهد. واپایش‌های غیر ضروری در صفحه‌های کوجک سهمگین‌تر پنهان می‌شوند.",
     "enableAutoScroll": "فعال کردن اسکرول خودکار",
     "@enableAutoScroll": {
@@ -1304,15 +1264,6 @@
     "quickActions": "عملیات‌های آنی",
     "@quickActions": {
         "description": "Title for the short menu that can be shown when long-pressing on the menu button on the player screen. Currently only used for adding to and removing from playlists."
-    },
-    "numberAsBit": "{bit} بیت",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "trackOfflineFavorites": "همگام‌سازی وضعیت علایق",
     "trackOfflineFavoritesSubtitle": "اجازه می‌دهد وضعیت علایق بروزتری در حالت آفلاین نشان داده شود.  هیچ فایل اضافه‌ای بارگیری نمی‌کند.",
@@ -1392,26 +1343,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "codec": "کدک",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitDepth": "ژرفای بیت",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "اندازه",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "گین (gain)",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "نرخ نمونه",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "albumScreen": "صفحه‌ی آلبوم",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1440,10 +1371,6 @@
     "@lyricsAlignmentSubtitle": {
         "description": "Subtitle for the setting that controls the alignment of lyrics in the lyrics view"
     },
-    "showFeatureChipsToggleSubtitle": "داده‌های پیشرفته قطعه مانند کدک، نرخ انتقال و ... را روی صفحه‌ی پخش نمایش می‌دهد.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "keepScreenOnWhileLyrics": "زمانی که متن شعر نمایش داده می‌شود",
     "showProgressOnNowPlayingBarSubtitle": "این‌که پخش‌کننده‌ی کوچک/میله‌ی پخش کنونی در پایین صفحه‌ی آهنگ مانند یک میله‌ی پیشروری رفتار کند را واپایش می‌کند.",
     "@showProgressOnNowPlayingBarSubtitle": {
@@ -1465,10 +1392,6 @@
     "lyricsAlignmentTitle": "هم‌ترازی متن شعرها",
     "@lyricsAlignmentTitle": {
         "description": "Title for the setting that controls the alignment of lyrics in the lyrics view"
-    },
-    "playbackMode": "حالت پخش",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
     },
     "showProgressOnNowPlayingBarTitle": "نمایش پیشروی قطعه روی پخش‌کننده‌ی کوچک درون برنامه",
     "@showProgressOnNowPlayingBarTitle": {
@@ -1494,19 +1417,7 @@
     "@showLyricsScreenAlbumPreludeTitle": {
         "description": "Title for the setting that controls if the album cover is shown before the lyrics in the lyrics view"
     },
-    "additionalPeople": "افراد",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
     "keepScreenOnDisabled": "غیرفعال",
-    "bitRate": "نرخ انتقال",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "نمایش داده‌های پیشرفته قطعه",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "emptyFilteredListSubtitle": "هیج آیتمی که با پالایش شما همخوانی داشته باشد یافت نشد. پالایش‌گر را خاموش کنید یا شرایط جست‌وجو را تغییر دهید.",
     "@emptyFilteredListSubtitle": {
         "description": "Message shown when a list of items is filtered and no items match the filter"
@@ -1623,16 +1534,6 @@
     "createPlaylistFromCurrentQueue": "ذخیره صف در فهرست پخش",
     "@createPlaylistFromCurrentQueue": {
         "description": "Label for a button that adds the current queue to an existing or new playlist."
-    },
-    "currentVolumeFeatureText": "{volume}% حجم",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "playOnStaleDelay": "زمان پایان نشست «پخش روی»",
     "@playOnStaleDelay": {

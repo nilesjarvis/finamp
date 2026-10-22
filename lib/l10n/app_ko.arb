@@ -415,10 +415,6 @@
         }
     },
     "addToMorePlaylistsTitle": "더 많은 플레이리스트에 추가하기",
-    "playbackModeDirectPlaying": "직접 재생",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -631,14 +627,6 @@
         "description": "Name for the expanded player"
     },
     "goToArtist": "아티스트로 가기",
-    "playbackModeTranscoding": "트랜스코딩",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackModeLocal": "다운로드 재생",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "togglePlaybackButtonTooltip": "재생 또는 일시정지",
     "@togglePlaybackButtonTooltip": {
         "description": "Tooltip for the button that toggles playback"
@@ -871,15 +859,6 @@
     "@shuffleAlbums": {
         "description": "Label for action that shuffles all albums of an artist or genre"
     },
-    "playbackSpeedFeatureText": "x{speed}배속",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "playingFromType": "{source, select, album{앨범} playlist{플레이리스트} trackMix{곡 믹스} artistMix{아티스트 믹스} albumMix{앨범 믹스} genreMix{장르 믹스} favorites{즐겨찾기} allTracks{전곡} filteredList{선별한 곡들} genre{장르} artist{아티스트} track{곡} nextUpAlbum{Next Up의 앨범} nextUpPlaylist{다음 Next Up의 플레이리스트} nextUpArtist{Next Up의 아티스트} nextUpGenre{Next Up의 장르} remoteClient{원격 클라이언트} radio{라디오} homeScreenSection{} collection{콜렉션} collectionMix{콜렉션 믹스} other{}} 재생 중",
     "@playingFromType": {
         "description": "Prefix shown before the type of the main queue source at the top of the player screen. Example: \"Playing From Album\"",
@@ -978,16 +957,6 @@
     "volumeNormalizationIOSBaseGainEditorTitle": "음량 기준선",
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "startInstantMixForIndividualTracksSwitchSubtitle": "활성화하면 (노래 탭에서) 곡을 탭했을 때 단일 곡 재생 대신 해당 곡으로 인스턴트 믹스를 시작합니다.",
     "downloadItem": "다운로드",
@@ -1300,16 +1269,6 @@
     "@stopAndClearQueue": {
         "description": "Label for a button that stops playback and removes all tracks from the queue."
     },
-    "currentVolumeFeatureText": "{volume}% 볼륨",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "playOnStaleDelay": "'Play On' 세션 시간 초과",
     "@playOnStaleDelay": {
         "description": "Label for the setting that controls how long a PlayOn remote session is considered active"
@@ -1580,24 +1539,6 @@
     "enableAutoScroll": "자동 스크롤 활성화",
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
-    },
-    "numberAsKiloHertz": "{kiloHertz} 킬로헤르츠",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "remainingDuration": "{duration} 남음",
     "@remainingDuration": {
@@ -2045,46 +1986,6 @@
     },
     "keepScreenOnWhilePluggedIn": "전원이 연결됐을 때만 화면 켜짐을 유지합니다",
     "keepScreenOnWhilePluggedInSubtitle": "전원 연결이 안 된 경우 화면 켜짐 유지 설정을 무시합니다",
-    "additionalPeople": "참여 인원",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "재생 모드",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "코덱",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "비트레이트",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "비트 심도",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "용량",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "게인",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "샘플레이트",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "곡의 고급 정보 표시",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "재생 화면에 코덱, 비트레이트 등 곡의 고급 정보를 표시합니다.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "seeAll": "모두 보기",
     "@seeAll": {
         "description": ""

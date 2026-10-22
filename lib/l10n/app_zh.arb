@@ -421,14 +421,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeTranscoding": "转码",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackModeDirectPlaying": "原码",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -438,10 +430,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "本地",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "skipToPreviousTrackButtonTooltip": "跳至开头或上一曲",
     "@skipToPreviousTrackButtonTooltip": {
@@ -466,15 +454,6 @@
     "playbackOrderShuffledButtonLabel": "随机播放",
     "@playbackOrderShuffledButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "x{speed} 倍速",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "playbackSpeedIncreaseLabel": "提高播放速度",
     "@playbackSpeedIncreaseLabel": {
@@ -557,24 +536,6 @@
     "allowSplitScreenSubtitle": "播放界面将与其他界面一起显示在更宽的显示屏上。",
     "prioritizePlayerCover": "优先显示专辑封面",
     "showArtistChipImage": "显示带有艺术家姓名的艺术家图片",
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "removeFromPlaylistConfirm": "移除",
     "trackMenuButtonTooltip": "歌曲菜单",
     "@trackMenuButtonTooltip": {
@@ -585,18 +546,6 @@
     "alignmentOptionEnd": "右对齐",
     "@alignmentOptionEnd": {
         "description": "Alignment option for things like the lyrics view. End means right-aligned in LTR languages and left-aligned in RTL languages."
-    },
-    "codec": "编码",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "playbackMode": "播放模式",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "showFeatureChipsToggleTitle": "显示歌曲详情",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "emptyFilteredListTitle": "未找到项目",
     "@emptyFilteredListTitle": {
@@ -639,16 +588,6 @@
     "shuffleNext": "乱序插入至队列首位",
     "@shuffleNext": {
         "description": "Used for shuffling a list (album, playlist, etc.) to the \"Next Up\" queue at the first position, to play right after the current track finishes playing"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "downloadItem": "下载",
     "@downloadItem": {
@@ -1194,30 +1133,6 @@
         },
         "description": "Tooltip for album artwork on track and album tiles as well as the album screen"
     },
-    "additionalPeople": "其他人员",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "bitRate": "比特率",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "位深",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "大小",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "增益",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "采样率",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "playerAlbumArtworkTooltip": "{title}的作品。点击切换播放。左右滑动切换歌曲。",
     "@playerAlbumArtworkTooltip": {
         "placeholders": {
@@ -1343,10 +1258,6 @@
     "showLyricsScreenAlbumPreludeTitle": "在歌词之前显示专辑封面",
     "@showLyricsScreenAlbumPreludeTitle": {
         "description": "Title for the setting that controls if the album cover is shown before the lyrics in the lyrics view"
-    },
-    "showFeatureChipsToggleSubtitle": "在播放界面上显示编码，比特率等歌曲详细信息。",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "confirmAddToQueue": "{type, select, track{歌曲} album{专辑} artist{艺术家} playlist{播放列表} genre{流派} disc{唱片}other{项目}}已添加到队列队尾",
     "@confirmAddToQueue": {
@@ -1667,16 +1578,6 @@
     "enablePlayonSubtitle": "启用 Jellyfin 的“继续播放”功能（从其他客户端远程控制 Finamp）。如果您的反向代理或服务器不支持 websockets，请禁用此功能。",
     "@enablePlayonSubtitle": {
         "description": "Description of the setting to enable Jellyfin's 'Play On' feature (remote control)"
-    },
-    "currentVolumeFeatureText": "{volume}% 音量",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "outputMenuButtonTitle": "输出",
     "@outputMenuButtonTitle": {
@@ -2701,10 +2602,6 @@
     "snackbarOptionsMenuViewLogsButton": "查看日志",
     "@snackbarOptionsMenuViewLogsButton": {
         "description": "Button title for opening the logs screen from the snackbar options menu"
-    },
-    "explicit": "露骨内容",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "amoledTheme": "使用 AMOLED 主题",
     "@amoledTheme": {

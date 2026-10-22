@@ -494,14 +494,6 @@
     "noAlbum": "Κανένα Άλμουμ",
     "noItem": "Κανένα Αρχείο",
     "unknownArtist": "Άγνωστος Καλλιτέχνης",
-    "playbackModeDirectPlaying": "Απευθείας αναπαραγωγή",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Μετακωδικοποίηση",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -511,10 +503,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Τοπική Αναπαραγωγή",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "queue": "Ουρά",
     "addToQueue": "Προσθήκη στην Ουρά",
@@ -757,25 +745,6 @@
         "placeholders": {
             "speed": {
                 "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "x{speed} ταχύτητα",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "{volume}% ένταση",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -1065,16 +1034,6 @@
     "volumeNormalizationIOSBaseGainEditorTitle": "Βασική Τιμή Ενίσχυσης",
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "downloadItem": "Λήψη",
     "@downloadItem": {
@@ -1824,24 +1783,6 @@
     "scrollToCurrentTrack": "Επαναφορά στο ύψος του τωρινού κομματιού",
     "@scrollToCurrentTrack": {
         "description": "Tooltip for button that scrolls the queue list back to the current track"
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "remainingDuration": "{duration} απομένουν",
     "@remainingDuration": {

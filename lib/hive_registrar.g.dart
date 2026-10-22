@@ -36,8 +36,6 @@ extension HiveRegistrar on HiveInterface {
     registerAdapter(DownloadedParentAdapter());
     registerAdapter(DownloadedTrackAdapter());
     registerAdapter(ExternalUrlAdapter());
-    registerAdapter(FinampFeatureChipTypeAdapter());
-    registerAdapter(FinampFeatureChipsConfigurationAdapter());
     registerAdapter(FinampHistoryItemAdapter());
     registerAdapter(FinampHomeScreenConfigurationAdapter());
     registerAdapter(FinampLoopModeAdapter());
@@ -149,8 +147,6 @@ extension IsolatedHiveRegistrar on IsolatedHiveInterface {
     registerAdapter(DownloadedParentAdapter());
     registerAdapter(DownloadedTrackAdapter());
     registerAdapter(ExternalUrlAdapter());
-    registerAdapter(FinampFeatureChipTypeAdapter());
-    registerAdapter(FinampFeatureChipsConfigurationAdapter());
     registerAdapter(FinampHistoryItemAdapter());
     registerAdapter(FinampHomeScreenConfigurationAdapter());
     registerAdapter(FinampLoopModeAdapter());

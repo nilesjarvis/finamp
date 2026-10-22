@@ -193,18 +193,6 @@ final AutoDisposeFutureProviderFamily<MetadataProvider?, BaseItemDto> metadataPr
         people: item.people,
       );
 
-      final chipConfig = ref.watch(finampSettingsProvider.featureChipsConfiguration);
-      if (!ref.watch(finampSettingsProvider.isOffline) &&
-          chipConfig.enabled &&
-          chipConfig.features.contains(FinampFeatureChipType.additionalPeople)) {
-        try {
-          final withPeople = await jellyfinApiHelper.getItems(itemIds: [item.id], fields: "People");
-          metadata.people = withPeople?.firstOrNull?.people;
-        } catch (e) {
-          metadataProviderLogger.warning("Failed to fetch people for '${item.name}' (${item.id})", e);
-        }
-      }
-
       for (final genre in item.genres ?? []) {
         if (MetadataProvider.speedControlGenres.contains(genre.toLowerCase())) {
           metadata.qualifiesForPlaybackSpeedControl = true;

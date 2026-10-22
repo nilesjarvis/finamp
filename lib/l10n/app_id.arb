@@ -647,14 +647,6 @@
     "noAlbum": "Tanpa album",
     "noItem": "Tidak ada item",
     "unknownArtist": "Artis tidak dikenal",
-    "playbackModeDirectPlaying": "Pemutaran langsung",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Transkode",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -664,10 +656,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Diputar secara lokal",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "queue": "Antrean",
     "addToQueue": "Tambahkan ke antrean",
@@ -928,25 +916,6 @@
         "placeholders": {
             "speed": {
                 "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "Kecepatan x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "Volume {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -1302,16 +1271,6 @@
     "volumeNormalizationIOSBaseGainEditorDescription": "Saat ini, Normalisasi Volume pada platform selain Android memerlukan perubahan volume pemutaran untuk meniru perubahan penguat. Karena kami tidak dapat menaikkan volume di atas 100%, kami perlu menurunkan volume secara default agar kami dapat meningkatkan volume trek yang pelan.\n\nNilainya dalam desibel (dB), dengan -10 dB ~30% volume, -4.5 dB ~60% volume, dan -2 dB ~80% volume.\nNilai positif berarti tidak ada penurunan volume yang diterapkan hingga ambang batas (misal: gain -6.4 dB (dan yang lebih positif) untuk offset +6.4 dB), tetapi mencegah trek yang lebih pelan untuk ditingkatkan.\n\nAnda sebaiknya mengatur ini ke kebalikan dari gain tertinggi (paling positif) di pustaka Anda, misal: atur ke +3 dB jika gain tertinggi di pustaka Anda adalah -3 dB (dan semua trek lain memiliki gain seperti -5 dB, -8 dB, -10 dB, dll.).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
         "description": "Description for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "swipeLeftToRightAction": "Aksi swipe ke kanan",
     "swipeLeftToRightActionSubtitle": "Aksi yang dipicu saat men-swipe trek dalam daftar dari kiri ke kanan.",
@@ -1681,24 +1640,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} tersisa",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1918,46 +1859,6 @@
     "nowPlayingBarTooltip": "Buka layar pemutar",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "additionalPeople": "Orang",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "Mode pemutaran",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "Bit rate",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "Kedalaman bit",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Ukuran",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "Penguat",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Sample rate",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "Tampilkan info trek lanjutan",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "Tampilkan info trek lanjutan seperti codec, bitrate, dan lainnya pada layar pemutar.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "seeAll": "Lihat Semua",
     "@seeAll": {
@@ -2808,10 +2709,6 @@
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
     },
-    "explicit": "Eksplisit",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
-    },
     "amoledTheme": "Gunakan Tema AMOLED",
     "@amoledTheme": {
         "description": "Toggles the dark color scheme between dark gray and pure black."
@@ -3658,26 +3555,6 @@
         "description": "Notification on sort and filter menu that currently pending changes will be automatically applied on close."
     },
     "removeFromQueue": "Hapus Dari Antrean",
-    "featureChipName": "{chipName, select, explicit{Eksplisit} playCount{Jumlah Putaran} additionalPeople{Orang Tambahan} playbackMode{Mode Pemutaran} codec{Codec} bitRate{Bitrate} bitDepth{Bit Depth} sampleRate{Sample Rate} size{Ukuran} normalizationGain{Gain Normalisasi} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
-    "featureChipDescription": "{chipName, select, explicit{Tandai trek dengan konten eksplisit} additionalPeople{Orang non-artis yang berhubungan dengan trek, jika tersedia (penulis, penulis lirik, dll.)} playbackMode{Informasi status streaming dan transkode} bitDepth{Bit per sampel audio. Hanya dapat diterapkan untuk codec lossless, biasanya 16 bit.} sampleRate{Sampel audio per detik. Biasanya 44.1 kHz.} normalizationGain{Level ReplayGain yang aktif saat ini} size{Ukuran file asli dari trek} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
-    },
     "maximizePlayer": "Maksimalkan pemutar",
     "collapsePlayer": "Lipat pemutar ke sidebar",
     "addSpecialDownloads": "Tambahkan unduhan spesial",

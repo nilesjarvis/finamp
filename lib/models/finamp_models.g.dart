@@ -265,9 +265,6 @@ class FinampSettingsAdapter extends TypeAdapter<FinampSettings> {
         keepScreenOnWhilePluggedIn: fields[73] == null
             ? false
             : fields[73] as bool,
-        featureChipsConfiguration: fields[76] == null
-            ? DefaultSettings.featureChipsConfiguration
-            : fields[76] as FinampFeatureChipsConfiguration,
         showCoversOnAlbumScreen: fields[77] == null
             ? false
             : fields[77] as bool,
@@ -486,7 +483,7 @@ class FinampSettingsAdapter extends TypeAdapter<FinampSettings> {
   @override
   void write(BinaryWriter writer, FinampSettings obj) {
     writer
-      ..writeByte(149)
+      ..writeByte(148)
       ..writeByte(0)
       ..write(obj.isOffline)
       ..writeByte(1)
@@ -625,8 +622,6 @@ class FinampSettingsAdapter extends TypeAdapter<FinampSettings> {
       ..write(obj.hasDownloadedPlaylistInfo)
       ..writeByte(75)
       ..write(obj.transcodingStreamingFormat)
-      ..writeByte(76)
-      ..write(obj.featureChipsConfiguration)
       ..writeByte(77)
       ..write(obj.showCoversOnAlbumScreen)
       ..writeByte(78)
@@ -1305,47 +1300,6 @@ class MediaItemIdAdapter extends TypeAdapter<MediaItemId> {
   bool operator ==(Object other) =>
       identical(this, other) ||
       other is MediaItemIdAdapter &&
-          runtimeType == other.runtimeType &&
-          typeId == other.typeId;
-}
-
-class FinampFeatureChipsConfigurationAdapter
-    extends TypeAdapter<FinampFeatureChipsConfiguration> {
-  @override
-  final typeId = 75;
-
-  @override
-  FinampFeatureChipsConfiguration read(BinaryReader reader) {
-    final numOfFields = reader.readByte();
-    final fields = <int, dynamic>{
-      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
-    };
-    return FinampFeatureChipsConfiguration(
-      enabled: fields[0] as bool,
-      features: (fields[1] as List).cast<FinampFeatureChipType>(),
-      migrated: fields[2] == null ? false : fields[2] as bool,
-    );
-  }
-
-  @override
-  void write(BinaryWriter writer, FinampFeatureChipsConfiguration obj) {
-    writer
-      ..writeByte(3)
-      ..writeByte(0)
-      ..write(obj.enabled)
-      ..writeByte(1)
-      ..write(obj.features)
-      ..writeByte(2)
-      ..write(obj.migrated);
-  }
-
-  @override
-  int get hashCode => typeId.hashCode;
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is FinampFeatureChipsConfigurationAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
@@ -2857,75 +2811,6 @@ class FinampTranscodingStreamingFormatAdapter
   bool operator ==(Object other) =>
       identical(this, other) ||
       other is FinampTranscodingStreamingFormatAdapter &&
-          runtimeType == other.runtimeType &&
-          typeId == other.typeId;
-}
-
-class FinampFeatureChipTypeAdapter extends TypeAdapter<FinampFeatureChipType> {
-  @override
-  final typeId = 74;
-
-  @override
-  FinampFeatureChipType read(BinaryReader reader) {
-    switch (reader.readByte()) {
-      case 0:
-        return FinampFeatureChipType.explicit;
-      case 1:
-        return FinampFeatureChipType.playCount;
-      case 2:
-        return FinampFeatureChipType.additionalPeople;
-      case 3:
-        return FinampFeatureChipType.playbackMode;
-      case 4:
-        return FinampFeatureChipType.codec;
-      case 5:
-        return FinampFeatureChipType.bitRate;
-      case 6:
-        return FinampFeatureChipType.bitDepth;
-      case 7:
-        return FinampFeatureChipType.sampleRate;
-      case 8:
-        return FinampFeatureChipType.size;
-      case 9:
-        return FinampFeatureChipType.normalizationGain;
-      default:
-        return FinampFeatureChipType.explicit;
-    }
-  }
-
-  @override
-  void write(BinaryWriter writer, FinampFeatureChipType obj) {
-    switch (obj) {
-      case FinampFeatureChipType.explicit:
-        writer.writeByte(0);
-      case FinampFeatureChipType.playCount:
-        writer.writeByte(1);
-      case FinampFeatureChipType.additionalPeople:
-        writer.writeByte(2);
-      case FinampFeatureChipType.playbackMode:
-        writer.writeByte(3);
-      case FinampFeatureChipType.codec:
-        writer.writeByte(4);
-      case FinampFeatureChipType.bitRate:
-        writer.writeByte(5);
-      case FinampFeatureChipType.bitDepth:
-        writer.writeByte(6);
-      case FinampFeatureChipType.sampleRate:
-        writer.writeByte(7);
-      case FinampFeatureChipType.size:
-        writer.writeByte(8);
-      case FinampFeatureChipType.normalizationGain:
-        writer.writeByte(9);
-    }
-  }
-
-  @override
-  int get hashCode => typeId.hashCode;
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is FinampFeatureChipTypeAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
@@ -9596,39 +9481,6 @@ Json? _$JsonConverterToJson<Json, Value>(
   Value? value,
   Json? Function(Value value) toJson,
 ) => value == null ? null : toJson(value);
-
-FinampFeatureChipsConfiguration _$FinampFeatureChipsConfigurationFromJson(
-  Map<String, dynamic> json,
-) => FinampFeatureChipsConfiguration(
-  enabled: json['enabled'] as bool,
-  features: (json['features'] as List<dynamic>)
-      .map((e) => $enumDecode(_$FinampFeatureChipTypeEnumMap, e))
-      .toList(),
-  migrated: json['migrated'] as bool,
-);
-
-Map<String, dynamic> _$FinampFeatureChipsConfigurationToJson(
-  FinampFeatureChipsConfiguration instance,
-) => <String, dynamic>{
-  'enabled': instance.enabled,
-  'features': instance.features
-      .map((e) => _$FinampFeatureChipTypeEnumMap[e]!)
-      .toList(),
-  'migrated': instance.migrated,
-};
-
-const _$FinampFeatureChipTypeEnumMap = {
-  FinampFeatureChipType.explicit: 'explicit',
-  FinampFeatureChipType.playCount: 'playCount',
-  FinampFeatureChipType.additionalPeople: 'additionalPeople',
-  FinampFeatureChipType.playbackMode: 'playbackMode',
-  FinampFeatureChipType.codec: 'codec',
-  FinampFeatureChipType.bitRate: 'bitRate',
-  FinampFeatureChipType.bitDepth: 'bitDepth',
-  FinampFeatureChipType.sampleRate: 'sampleRate',
-  FinampFeatureChipType.size: 'size',
-  FinampFeatureChipType.normalizationGain: 'normalizationGain',
-};
 
 FinampOutputRoute _$FinampOutputRouteFromJson(Map<String, dynamic> json) =>
     FinampOutputRoute(

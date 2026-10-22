@@ -72,7 +72,6 @@ class FinampSettingsHelper {
   static void resetPlayerScreenSettings() {
     FinampSettings finampSettingsTemp = finampSettings;
 
-    finampSettingsTemp.featureChipsConfiguration = DefaultSettings.featureChipsConfiguration;
     finampSettingsTemp.playerScreenCoverMinimumPadding = DefaultSettings.playerScreenCoverMinimumPadding;
     finampSettingsTemp.suppressPlayerPadding = DefaultSettings.suppressPlayerPadding;
     finampSettingsTemp.prioritizeCoverFactor = DefaultSettings.prioritizeCoverFactor;

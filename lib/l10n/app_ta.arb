@@ -192,24 +192,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} கிஎட்சு",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} பிட்",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} மீதமுள்ள",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -603,14 +585,6 @@
     "noAlbum": "ஆல்பம் இல்லை",
     "noItem": "உருப்படி இல்லை",
     "unknownArtist": "தெரியாத கலைஞர்",
-    "playbackModeDirectPlaying": "நேரடி விளையாட்டு",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "டிரான்ச்கோடிங்",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -620,10 +594,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "உள்ளூரில் விளையாடுகிறது",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "queue": "வரிசை",
     "addToQueue": "வரிசையில் சேர்க்கவும்",
@@ -794,15 +764,6 @@
     "@playbackOrderLinearButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in linear/in-order mode"
     },
-    "playbackSpeedFeatureText": "ஃச் {speed} விரைவு",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "playbackOrderLinearButtonTooltip": "வரிசையில் விளையாடுவது. கலக்கத் தட்டவும்.",
     "@playbackOrderLinearButtonTooltip": {
         "description": "Tooltip for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in linear/in-order mode"
@@ -971,16 +932,6 @@
     "volumeNormalizationIOSBaseGainEditorSubtitle": "வால்யூம் ஆதாய ஆஃப்செட்டைத் தேர்ந்தெடுக்கவும் (dB இல்)",
     "@volumeNormalizationIOSBaseGainEditorSubtitle": {
         "description": "Subtitle for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} db",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "startInstantMixForIndividualTracksSwitchSubtitle": "இயக்கப்பட்டால், டிராக்குகள் தாவலில் ஒரு பாதையைத் தட்டுவது ஒரு தடத்தை விளையாடுவதற்குப் பதிலாக அந்த பாதையின் உடனடி கலவையைத் தொடங்கும்.",
     "startInstantMixForIndividualTracksSwitchTitle": "தனிப்பட்ட தடங்களுக்கான உடனடி கலவைகளைத் தொடங்கவும்",
@@ -1454,46 +1405,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "additionalPeople": "மக்கள்",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "பிளேபேக் பயன்முறை",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "புரிப்பு",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "துகள் வீதம்",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "பிட் ஆழம்",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "அளவு",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "பெருக்கம்",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "மாதிரி வீதம்",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "மேம்பட்ட தட தகவலைக் காட்டு",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "பிளேயர் திரையில் கோடெக், பிட்ரேட் மற்றும் பலவற்றைப் போன்ற மேம்பட்ட தட தகவல்களைக் காட்டு.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "ஆல்பம் திரை",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1598,16 +1509,6 @@
         "placeholders": {
             "type": {
                 "type": "String"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "{volume}% தொகுதி",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -2769,10 +2670,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "சாதனம் ஆதரிக்கும் பட்சத்தில், வன்பொருளில் ஆடியோ செயலாக்கத்தை ஆஃப்லோட் செய்யவும்.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "வெளிப்படையானது",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "multichannelHandlingTitle": "பல சேனல் டிரான்ஸ்கோட் கையாளுதல்",
     "@multichannelHandlingTitle": {

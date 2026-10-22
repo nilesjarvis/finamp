@@ -576,16 +576,6 @@ extension FinampSetters on FinampSettingsHelper {
     ).put("FinampSettings", finampSettingsTemp);
   }
 
-  static void setFeatureChipsConfiguration(
-    FinampFeatureChipsConfiguration newFeatureChipsConfiguration,
-  ) {
-    FinampSettings finampSettingsTemp = FinampSettingsHelper.finampSettings;
-    finampSettingsTemp.featureChipsConfiguration = newFeatureChipsConfiguration;
-    Hive.box<FinampSettings>(
-      "FinampSettings",
-    ).put("FinampSettings", finampSettingsTemp);
-  }
-
   static void setShowCoversOnAlbumScreen(bool newShowCoversOnAlbumScreen) {
     FinampSettings finampSettingsTemp = FinampSettingsHelper.finampSettings;
     finampSettingsTemp.showCoversOnAlbumScreen = newShowCoversOnAlbumScreen;
@@ -1519,10 +1509,6 @@ extension FinampSettingsProviderSelectors on StreamProvider<FinampSettings> {
   ProviderListenable<FinampTranscodingStreamingFormat>
   get transcodingStreamingFormat => finampSettingsProvider.select(
     (value) => value.requireValue.transcodingStreamingFormat,
-  );
-  ProviderListenable<FinampFeatureChipsConfiguration>
-  get featureChipsConfiguration => finampSettingsProvider.select(
-    (value) => value.requireValue.featureChipsConfiguration,
   );
   ProviderListenable<bool> get showCoversOnAlbumScreen => finampSettingsProvider
       .select((value) => value.requireValue.showCoversOnAlbumScreen);

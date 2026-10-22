@@ -509,10 +509,6 @@
             }
         }
     },
-    "playbackModeLocal": "Spelas Lokalt",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "skipToNextTrackButtonTooltip": "Hoppa till nästa spår",
     "@skipToNextTrackButtonTooltip": {
         "description": "Tooltip for the button that skips to the next track"
@@ -536,10 +532,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeTranscoding": "Transkodar",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
     },
     "bufferSizeSubtitle": "Storlek på bufferten i MB. Kräver en omstart",
     "shareOfflineListens": "Dela offline-lyssningar",
@@ -628,10 +620,6 @@
                 "example": "13"
             }
         }
-    },
-    "playbackModeDirectPlaying": "Direkt Uppspelning",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
     },
     "bufferDisableSizeConstraintsSubtitle": "Avlägsnar buffertstorlekens begränsningar ('Buffertstorlek'). Bufferten laddas alltid till den angivna längden ('Buffertlängd'), även för väldigt stora filer. Kan orsaka krascher. Kräver en omstart.",
     "previousTracks": "Föregående spår",
@@ -786,15 +774,6 @@
             }
         }
     },
-    "playbackSpeedFeatureText": "x{speed} hastighet",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "loopModeNoneButtonLabel": "Loopar inte",
     "@loopModeNoneButtonLabel": {
         "description": "Label for the button that toggles the loop mode between off, loop one, and loop all, while the queue is in loop off mode"
@@ -897,16 +876,6 @@
     "volumeNormalizationModeSelectorDescription": "Hybrid (Spår + Album):\nSpårets förstärkning används för vanlig uppspelning, men ifall ett album spelas upp (antingen för att det är källan till den huvudsakliga spelkön, eller för att det lades till i kön vid något tillfälle), så används albumets förstärkning istället.\n\nEnstaka spår:\nSpårets förstärkning används alltid, oavsett ifall ett album spelas eller inte.\n\nEndast album:\nVolymnormalisering tillämpas endast vid uppspelning av album (utifrån albumets förstärkning), men inte för individuella spår.",
     "@volumeNormalizationModeSelectorDescription": {
         "description": "Description for the dropdown that selects the replay gain mode, shown in a dialog that opens when the user presses the info icon next to the dropdown"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "startInstantMixForIndividualTracksSwitchTitle": "Starta snabbmixar för enstaka spår",
     "@startInstantMixForIndividualTracksSwitchTitle": {
@@ -1038,15 +1007,6 @@
     },
     "hidePlayerBottomActionsSubtitle": "Dölj knapparna för spelkö och sångexter på spelarskärmen. Svep upp för att komma åt spelkön, och svep vänster (under skivomslaget) för att visa sångtexter ifall de finns tillgängliga.",
     "prioritizePlayerCoverSubtitle": "Priorisera visning av ett större albumomslag på spelarskärmen. Mindre viktiga kontroller döljs mer aggressivt vid små skärmstorlekar.",
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "removeFromPlaylistPrompt": "Ta bort '{itemName}' från spellistan '{playlistName}'?",
     "@removeFromPlaylistPrompt": {
         "placeholders": {
@@ -1085,10 +1045,6 @@
     "lyricsFontSizeSubtitle": "Styr textstorleken på sångtexter i textvyn.",
     "@lyricsFontSizeSubtitle": {
         "description": "Subtitle for the setting that controls the font size of lyrics in the lyrics view"
-    },
-    "playbackMode": "Uppspelningsläge",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
     },
     "showCoversOnAlbumScreenTitle": "Visa albumomslag för spår",
     "@showCoversOnAlbumScreenTitle": {
@@ -1318,22 +1274,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "additionalPeople": "Personer",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "bitDepth": "Bitdjup",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "sampleRate": "Samplingshastighet",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "Visa avancerad info om spåret",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "showCoversOnAlbumScreenSubtitle": "Visa albumomslag separat för varje spår på albumskärmen.",
     "@showCoversOnAlbumScreenSubtitle": {
         "description": "Subtitle for the setting that controls if album covers are shown for each track separately on the album screen"
@@ -1403,10 +1343,6 @@
         "description": "Subtitle for the setting that controls if the album cover is shown before the lyrics in the lyrics view"
     },
     "keepScreenOnSubtitle": "När skärmen ska hållas påslagen",
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
     "maxConcurrentDownloads": "Max antal samtidiga nedladdningar",
     "@maxConcurrentDownloads": {
         "description": "Title of setting controlling max concurrent downloads."
@@ -1432,15 +1368,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "addPlaylistSubheader": "Lägg till spår i spellista",
     "@addPlaylistSubheader": {
         "description": "Subheader for adding to a playlist in the add to/remove from playlist popup menu"
@@ -1452,14 +1379,6 @@
     },
     "allPlaylistsInfoSettingSubtitle": "Synka metadata för alla spellistor för att förbättra din upplevelse med spellistor",
     "keepScreenOnDisabled": "Inaktiverat",
-    "size": "Storlek",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "showFeatureChipsToggleSubtitle": "Visa avancerad information om spåret, såsom codec, bithastighet och mer, på spelarskärmen.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "Albumskärm",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1512,10 +1431,6 @@
             }
         },
         "description": "Tooltip for the album artwork on the player screen"
-    },
-    "bitRate": "Bithastighet",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
     },
     "emptyFilteredListSubtitle": "Inga artiklar matchade filtret. Försök att stänga av filtret eller ändra sökbeteckningen.",
     "@emptyFilteredListSubtitle": {
@@ -1596,10 +1511,6 @@
     "keepScreenOnWhileLyrics": "Medan sångtexter visas",
     "keepScreenOnWhilePluggedInSubtitle": "Ignorera inställningen Håll skärmen påslagen ifall enheten inte laddas",
     "artwork": "Konstverk",
-    "normalizationGain": "Förstärkning",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
     "swipeLeftToRightAction": "Åtgärd högersvepning",
     "swipeRightToLeftAction": "Åtgärd vänstersvepning",
     "swipeRightToLeftActionSubtitle": "Åtgärd som utförs när du sveper ett spår i listan från höger till vänster.",
@@ -1646,16 +1557,6 @@
     "playOnStaleDelay": "Varaktighet 'Spela på'-session",
     "@playOnStaleDelay": {
         "description": "Label for the setting that controls how long a PlayOn remote session is considered active"
-    },
-    "currentVolumeFeatureText": "{volume}% volym",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "libraryDownloads": "Biblioteksnedladdningar",
     "@libraryDownloads": {
@@ -2903,10 +2804,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "Avlasta ljudbehandling till hårdvara, om det stöds av enheten.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "Explicit",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "volumeControlHint": "Använd {shortcut} för att justera volymen",
     "@volumeControlHint": {

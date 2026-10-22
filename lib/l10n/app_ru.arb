@@ -451,10 +451,6 @@
         }
     },
     "addToMorePlaylistsTitle": "Добавить в другие плейлисты",
-    "playbackModeTranscoding": "Транскодирование",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} Кбит/с",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -486,10 +482,6 @@
     "fontSizeOptionMedium": "Средний",
     "@fontSizeOptionMedium": {
         "description": "Font size option for things like the lyrics view. Medium means a medium font size."
-    },
-    "playbackModeDirectPlaying": "Прямое воспроизведение",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
     },
     "previousTracks": "Предыдущие композиции",
     "@previousTracks": {
@@ -745,10 +737,6 @@
                 "example": "13"
             }
         }
-    },
-    "playbackModeLocal": "Локальное воспроизведение",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "clearNextUp": "Очистить следующие",
     "@clearNextUp": {
@@ -1006,15 +994,6 @@
     "@lockDownload": {
         "description": "Text shown on button to require an item which is already downloaded by a parent collection, preventing it from being deleted if the parent is removed."
     },
-    "numberAsBit": "{bit} бит",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "removeFromPlaylistConfirm": "Убрать",
     "lyricsScreen": "Просмотр текста песни",
     "@lyricsScreen": {
@@ -1023,14 +1002,6 @@
     "showStopButtonOnMediaNotificationTitle": "Показывать Кнопку Остановки в Медиа-Уведомлении",
     "@showStopButtonOnMediaNotificationTitle": {
         "description": "Title for the setting that controls if the media notification has a stop button in addition to the pause button."
-    },
-    "showFeatureChipsToggleTitle": "Показать расширенную информацию о композиции",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "Показывать расширенную информацию о композиции, такую как кодек, битрейт и другие данные, на экране плеера.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "showCoversOnAlbumScreenTitle": "Показывать обложки альбомов для композиций",
     "@showCoversOnAlbumScreenTitle": {
@@ -1097,15 +1068,6 @@
     "playbackOrderShuffledButtonLabel": "Играем вперемешку",
     "@playbackOrderShuffledButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "Скорость x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "queueRestoreSubtitle1": "Воспроизводится: {track}",
     "@queueRestoreSubtitle1": {
@@ -1177,16 +1139,6 @@
     "volumeNormalizationModeHybrid": "Динамический",
     "@volumeNormalizationModeHybrid": {
         "description": "'Hybrid' option for the replay gain mode dropdown. In hybrid mode, the track gain is used for regular playback, but if an album is playing (either because it's the main playback queue source, or because it was added to the queue at some point), the album gain is used instead."
-    },
-    "numberAsDecibel": "{value} дБ",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "repairComplete": "Починка загрузок завершена.",
     "@repairComplete": {
@@ -1347,15 +1299,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} кГц",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "remainingDuration": "{duration} осталось",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1403,10 +1346,6 @@
     "@resetSettingsPromptLocal": {
         "description": "Prompt which gets shown when the user is about to reset all settings in the current settings window to their default values"
     },
-    "bitDepth": "Разрядность",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
     "lyricsFontSizeSubtitle": "Управляет размером шрифта текстов песен в просмотре текстов.",
     "@lyricsFontSizeSubtitle": {
         "description": "Subtitle for the setting that controls the font size of lyrics in the lyrics view"
@@ -1427,26 +1366,6 @@
             }
         },
         "description": "Tooltip for album artwork on track and album tiles as well as the album screen"
-    },
-    "additionalPeople": "Люди",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "Режим воспроизведения",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Кодек",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "normalizationGain": "Усиление",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Частота дискретизации",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
     },
     "albumScreen": "Экран альбома",
     "@albumScreen": {
@@ -1473,10 +1392,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "size": "Размер",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
     "genericCancel": "Отмена",
     "@genericCancel": {
         "description": "Used when the user stops an action from taking place inside a popup dialog window"
@@ -1493,10 +1408,6 @@
         "description": "Tooltip for toggle buttons that can be tapped to toggle their state"
     },
     "artwork": "Обложка",
-    "bitRate": "Битрейт",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
     "resetSettingsPromptGlobal": "Вы уверены, что хотите сбросить ВСЕ настройки к значениям по умолчанию?",
     "@resetSettingsPromptGlobal": {
         "description": "Prompt which gets shown when the user is about to reset all settings to their default values"
@@ -1608,16 +1519,6 @@
     "startupErrorCallToAction": "Пожалуйста, сообщите о проблеме на \"github.com/jmshrv/finamp\" прикреплив логи и скриншот этой страницы, чтобы мы могли исправить её как можно быстрее.",
     "@startupErrorCallToAction": {
         "description": "The subtitle / call to action for what to do after encountering a startup error"
-    },
-    "currentVolumeFeatureText": "громкость {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "noItemsDownloaded": "Ничего не скачано.",
     "@noItemsDownloaded": {
@@ -2744,10 +2645,6 @@
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
     },
-    "explicit": "Explicit",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
-    },
     "activeLibraries": "Активные библиотеки",
     "@activeLibraries": {
         "description": "Active Libraries"
@@ -3603,26 +3500,6 @@
         "description": "Notification on sort and filter menu that currently pending changes will be automatically applied on close."
     },
     "removeFromQueue": "Удалить из очереди",
-    "featureChipName": "{chipName, select, explicit{Explicit} playCount{Количество воспроизведений} additionalPeople{Дополнительные люди} playbackMode{Режим воспроизведения} codec{Кодек} bitRate{Битрейт} bitDepth{Глубина кодирования} sampleRate{Частота дискретизации} size{Size} normalizationGain{Усиление нормализации} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
-    "featureChipDescription": "{chipName, select, explicit{Помечает треки, содержащие нецензурные материалы} additionalPeople{Лица, не являющиеся исполнителями, связанные с этой композицией (если таковые имеются) (авторы музыки, авторы текстов и т. д.)} playbackMode{Информация о состоянии потоковой передачи и транскодирования} bitDepth{Количество бит на один аудио-сэмпл.  Применимо только к кодекам без потерь, как правило, 16 бит.} sampleRate{Число аудиовыборок в секунду.  Обычно 44,1 кГц.} normalizationGain{Текущее значение ReplayGain} size{Изначальный размер файла трека} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
-    },
     "maximizePlayer": "Развернуть плеер",
     "collapsePlayer": "Свернуть плеер в боковую панель",
     "addSpecialDownloads": "Добавить специальную загрузку",

@@ -342,18 +342,6 @@
     },
     "hours": "Horas",
     "seconds": "Segundos",
-    "playbackModeDirectPlaying": "Reprodução direta",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeLocal": "Reproduzindo localmente",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
-    "playbackModeTranscoding": "Transcodificando",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "goToArtist": "Ir para artista",
     "goToGenre": "Ir para gênero",
     "skipToNextTrackButtonTooltip": "Pular para a próxima faixa",
@@ -413,16 +401,6 @@
     "volumeNormalizationSwitchSubtitle": "Utilizar informação do ganho para normalizar o volume das faixas (\"Replay Gain\")",
     "@volumeNormalizationSwitchSubtitle": {
         "description": "Subtitle for the switch that toggles replay gain"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "downloadItem": "Transferir",
     "@downloadItem": {
@@ -542,15 +520,6 @@
     "playbackSpeedButtonLabel": "Reproduzindo na velocidade {speed}x",
     "@playbackSpeedButtonLabel": {
         "description": "Label for the button that toggles visibility. of the playback speed menu, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "velocidade {speed}x",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
         "placeholders": {
             "speed": {
                 "type": "double"
@@ -1172,15 +1141,6 @@
     "@scrollToCurrentTrack": {
         "description": "Tooltip for button that scrolls the queue list back to the current track"
     },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} restante",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1283,15 +1243,6 @@
     "@showProgressOnNowPlayingBarTitle": {
         "description": "Title for the setting that controls if the in-app miniplayer / now playing bar at the botton of the music screen functions as a progress bar"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "enableAutoScroll": "Habilitar rolagem automática",
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
@@ -1348,34 +1299,6 @@
     "keepScreenOnWhileLyrics": "Letras sendo exibidas",
     "keepScreenOnWhilePluggedIn": "Somente manter a tela ligada quando carregando",
     "keepScreenOnWhilePluggedInSubtitle": "Ignorar a configuração \"Manter tela ligada\" se o dispositivo não estiver carregando",
-    "additionalPeople": "Pessoas",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "Modo de reprodução",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "size": "Tamanho",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "Ganho",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Taxa de amostragem",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "Mostrar informações avançadas da faixa",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "Mostrar informações avançadas em tela, como codec, taxa de bits, entre outras.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "Álbuns",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1421,10 +1344,6 @@
     "noItemsDownloaded": "Nenhum item baixado.",
     "@noItemsDownloaded": {
         "description": "Shown on the downloads screen for sections without any downloaded items."
-    },
-    "bitDepth": "Profundidade de bits",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
     },
     "resetSettingsPromptLocal": "Deseja reiniciar essas configurações para o padrão de fábrica?",
     "@resetSettingsPromptLocal": {
@@ -1527,14 +1446,6 @@
     "showLyricsTimestampsTitle": "Mostrar marcações de tempo para letras sincronizadas",
     "@showLyricsTimestampsTitle": {
         "description": "Title for the setting that controls if timestamps are shown for lyrics"
-    },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "Taxa de bits",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
     },
     "emptyFilteredListTitle": "Nenhum item encontrado",
     "@emptyFilteredListTitle": {

@@ -400,10 +400,6 @@
     "@startMixNoTracksGenre": {
         "description": "Snackbar message that shows when the user presses the instant mix button with no genres selected"
     },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
     "albumScreen": "Albumseite",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -496,14 +492,6 @@
         "description": "Tooltip and accessibility label for the track progress. {currentTime} is the current position within the track, as a translated string like '2 minutes 40 seconds', and {totalTime} is the total duration of the track, also a translated string."
     },
     "addToMorePlaylistsTitle": "Zu weiteren Wiedergabelisten hinzufügen",
-    "playbackModeDirectPlaying": "Direkte Wiedergabe",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Transkodierung",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -513,10 +501,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Lokale Wiedergabe",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToGenre": "Gehe zu Genre",
     "confirmAddedToPlaylist": "Zur Wiedergabeliste hinzugefügt.",
@@ -608,30 +592,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "bitRate": "Bit Rate",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "playbackMode": "Wiedergabe Modus",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "additionalPeople": "Personen",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "normalizationGain": "Gain",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "size": "Größe",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "showFeatureChipsToggleTitle": "Zeige erweiterte Titelinformationen an",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "showCoversOnAlbumScreenTitle": "Zeige Album Cover für Titel",
     "@showCoversOnAlbumScreenTitle": {
         "description": "Title for the setting that controls if album covers are shown for each track separately on the album screen"
@@ -643,10 +603,6 @@
     "skipToPreviousTrackButtonTooltip": "Springe zum Anfang oder letzten Track",
     "@skipToPreviousTrackButtonTooltip": {
         "description": "Tooltip for the button that skips to the beginning of the current track or to the previous track"
-    },
-    "showFeatureChipsToggleSubtitle": "Zeige erweiterte Titelinformationen (z.B. Codec, Bit Rate und mehr) im Player an.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "playerAlbumArtworkTooltip": "Grafiken für {title}. Tippe, um Wiedergabe umzuschalten. Swipe nach links oder rechts, um den Track zu wechseln.",
     "@playerAlbumArtworkTooltip": {
@@ -702,16 +658,6 @@
     "volumeNormalizationModeAlbumOnly": "Nur für Alben",
     "@volumeNormalizationModeAlbumOnly": {
         "description": "'Only for Albums' option for the replay gain mode dropdown. In albums-only mode, Volume Normalization is only applied while playing albums (using the album gain), but not for individual tracks."
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "downloadItem": "Herunterladen",
     "@downloadItem": {
@@ -790,10 +736,6 @@
     "keepScreenOnWhilePlaying": "Beim Abspielen von Musik",
     "keepScreenOnWhileLyrics": "Beim Anzeigen von Lyrics",
     "keepScreenOnWhilePluggedIn": "Bildschirm nur eingeschaltet lassen, während das Gerät geladen wird",
-    "bitDepth": "Bittiefe",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
     "emptyFilteredListTitle": "Keine Elemente gefunden",
     "@emptyFilteredListTitle": {
         "description": "Message shown when a list of items is filtered and no items match the filter"
@@ -901,24 +843,6 @@
     "quickActions": "Schnellaktionen",
     "@quickActions": {
         "description": "Title for the short menu that can be shown when long-pressing on the menu button on the player screen. Currently only used for adding to and removing from playlists."
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} Bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "remainingDuration": "{duration} verbleibend",
     "@remainingDuration": {
@@ -1190,15 +1114,6 @@
     "confirmShuffleToQueue": "Zufällig zur Warteschlange hinzugefügt",
     "@confirmShuffleToQueue": {
         "description": "A confirmation message that is shown after successfully shuffling a list (album, playlist, etc.) to the end of the regular queue"
-    },
-    "playbackSpeedFeatureText": "x{speed}-fache Geschwindigkeit",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "loopModeOneButtonLabel": "Diesen Track wiederholen",
     "@loopModeOneButtonLabel": {
@@ -1489,10 +1404,6 @@
     },
     "keepScreenOnSubtitle": "Wann der Bildschirm eingeschaltet bleiben soll",
     "keepScreenOnWhilePluggedInSubtitle": "Die \"Bildschirm eingeschaltet lassen\" Einstellungen ignorieren, wenn das Gerät nicht aufgeladen wird",
-    "sampleRate": "Sample Rate",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "showCoversOnAlbumScreenSubtitle": "Zeige Alben Cover auf der Albumseite separat für jeden einzelnen Titel.",
     "@showCoversOnAlbumScreenSubtitle": {
         "description": "Subtitle for the setting that controls if album covers are shown for each track separately on the album screen"
@@ -1665,16 +1576,6 @@
     "playOnReconnectionDelay": "'Abspielen auf' Sitzung Wiederverbindungs-Delay",
     "@playOnReconnectionDelay": {
         "description": "Label for the setting that controls the reconnection attempts frequency of a disconnected PlayOn session"
-    },
-    "currentVolumeFeatureText": "{volume}% Lautstärke",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "outputMenuVolumeSectionTitle": "Lautstärke",
     "@outputMenuVolumeSectionTitle": {
@@ -2717,10 +2618,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "Lagert die Audioverarbeitung an die Hardware aus, sofern dies vom Gerät unterstützt wird.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "Explicit",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "lyricsEmptyStateLoading": "Songtexte werden geladen...",
     "@lyricsEmptyStateLoading": {

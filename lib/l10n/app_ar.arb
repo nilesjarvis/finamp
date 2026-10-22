@@ -623,14 +623,6 @@
     "@browsePlaylists": {
         "description": "Label for a button on the genre screen that brings you to a list of genre-filtered playlists."
     },
-    "playbackModeDirectPlaying": "تشغيل مباشر",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "يتم تحويل الترميز",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} كيلوبت في الثانية",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -640,10 +632,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "تشغيل محلي",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToArtist": "انتقال إلى الفنان",
     "goToGenre": "انتقل إلى النوع الموسيقي",
@@ -901,25 +889,6 @@
         "placeholders": {
             "speed": {
                 "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "x{speed} السرعة",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "{volume}% مستوى الصوت",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -1288,16 +1257,6 @@
     "volumeNormalizationIOSBaseGainEditorDescription": "في الوقت الحالي، تتطلب ميزة \"تسوية الصوت\" (Volume Normalization) على المنصات غير الأندرويد تغيير مستوى صوت التشغيل لمحاكاة التغيير في الكسب (Gain). ونظراً لأنه لا يمكننا رفع مستوى الصوت ليتجاوز 100%، فإننا نضطر لخفضه افتراضياً لنتمكن من تضخيم صوت الأغاني الهادئة.\n\nتُقاس القيمة بالديسيبل (dB)، حيث يمثل -10 ديسيبل حوالي 30% من مستوى الصوت، و -4.5 ديسيبل حوالي 60%، و -2 ديسيبل حوالي 80%.\nتعني القيم الموجبة عدم تطبيق أي خفض في مستوى الصوت حتى الوصول إلى الحد المطلوب (مثلاً: كسب بقيمة -6.4 ديسيبل أو أعلى لإزاحة قدرها +6.4 ديسيبل)، ولكن هذا يمنع تضخيم الأغاني الأكثر هدوءاً.\n\nيجب ضبط هذه القيمة لتكون عكس أعلى قيمة كسب (الأكثر إيجابية) في مكتبتك؛ فمثلاً: اضبطها على +3 ديسيبل إذا كان أعلى كسب في مكتبتك هو -3 ديسيبل (وكانت بقية الأغاني ذات كسب أقل مثل -5 ديسيبل، -8 ديسيبل، -10 ديسيبل، وهكذا).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
         "description": "Description for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "swipeLeftToRightAction": "إجراء السحب لليمين",
     "swipeLeftToRightActionSubtitle": "الإجراء الذي يتم تفعيله عند سحب أغنية في القائمة من اليسار إلى اليمين.",
@@ -1714,24 +1673,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} كيلوهرتز",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} بت",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} متبقية",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1951,46 +1892,6 @@
     "nowPlayingBarTooltip": "فتح شاشة المشغل",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "additionalPeople": "الأشخاص",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "وضع التشغيل",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "الترميز",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "معدل البت",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "عمق البت",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "الحجم",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "كسب الصوت",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "معدل العينة",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "إظهار معلومات الأغنية المتقدمة",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "إظهار معلومات الأغنية المتقدمة مثل الترميز ومعدل البت والمزيد على شاشة المشغل.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "seeAll": "عرض الكل",
     "@seeAll": {
@@ -2810,10 +2711,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "تفريغ معالجة الصوت إلى العتاد (Hardware)، إذا كان الجهاز يدعم ذلك.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "صريح",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "volumeControlHint": "استخدم {shortcut} لضبط مستوى الصوت",
     "@volumeControlHint": {

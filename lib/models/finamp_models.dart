@@ -206,19 +206,6 @@ class DefaultSettings {
   static const keepScreenOnWhilePluggedIn = false;
   static const hasDownloadedPlaylistInfo = false;
   static const transcodingStreamingFormat = FinampTranscodingStreamingFormat.aacFragmentedMp4;
-  static const featureChipsConfiguration = FinampFeatureChipsConfiguration(
-    enabled: true,
-    features: [
-      FinampFeatureChipType.explicit,
-      FinampFeatureChipType.additionalPeople,
-      FinampFeatureChipType.playCount,
-      FinampFeatureChipType.playbackMode,
-      FinampFeatureChipType.codec,
-      FinampFeatureChipType.bitRate,
-      FinampFeatureChipType.normalizationGain,
-    ],
-    migrated: true,
-  );
   static const showCoversOnAlbumScreen = false;
   static const allowSplitScreen = true;
   static const requireWifiForDownloads = true;
@@ -402,7 +389,6 @@ class FinampSettings {
     this.showSeekControlsOnMediaNotification = DefaultSettings.showSeekControlsOnMediaNotification,
     this.keepScreenOnOption = DefaultSettings.keepScreenOnOption,
     this.keepScreenOnWhilePluggedIn = DefaultSettings.keepScreenOnWhilePluggedIn,
-    this.featureChipsConfiguration = DefaultSettings.featureChipsConfiguration,
     this.showCoversOnAlbumScreen = DefaultSettings.showCoversOnAlbumScreen,
     this.hasDownloadedPlaylistInfo = DefaultSettings.hasDownloadedPlaylistInfo,
     this.transcodingStreamingFormat = DefaultSettings.transcodingStreamingFormat,
@@ -704,9 +690,6 @@ class FinampSettings {
 
   @HiveField(75, defaultValue: DefaultSettings.transcodingStreamingFormat)
   FinampTranscodingStreamingFormat transcodingStreamingFormat;
-
-  @HiveField(76, defaultValue: DefaultSettings.featureChipsConfiguration)
-  FinampFeatureChipsConfiguration featureChipsConfiguration;
 
   @HiveField(77, defaultValue: DefaultSettings.showCoversOnAlbumScreen)
   bool showCoversOnAlbumScreen;
@@ -2982,96 +2965,6 @@ enum FinampTranscodingStreamingFormat {
     FinampTranscodingStreamingFormat.flacFragmentedMp4 => true,
     _ => false,
   };
-}
-
-@HiveType(typeId: 74)
-enum FinampFeatureChipType {
-  // Feature chips on the player screen will be displayed in the same order as this enum.
-  @HiveField(0)
-  explicit,
-  @HiveField(1)
-  playCount,
-  @HiveField(2)
-  additionalPeople,
-  @HiveField(3)
-  playbackMode,
-  @HiveField(4)
-  codec,
-  @HiveField(5)
-  bitRate,
-  @HiveField(6)
-  bitDepth,
-  @HiveField(7)
-  sampleRate,
-  @HiveField(8)
-  size,
-  @HiveField(9)
-  normalizationGain;
-
-  /// Human-readable version of the [FinampFeatureChipType]
-  @override
-  @Deprecated("Use toLocalisedString when possible")
-  String toString() => toLocalisedString(GlobalSnackbar.englishL10n);
-
-  String toLocalisedString(AppLocalizations l10n) {
-    switch (this) {
-      case FinampFeatureChipType.playCount:
-        return l10n.playCount;
-      case FinampFeatureChipType.additionalPeople:
-        return l10n.additionalPeople;
-      case FinampFeatureChipType.playbackMode:
-        return l10n.playbackMode;
-      case FinampFeatureChipType.codec:
-        return l10n.codec;
-      case FinampFeatureChipType.bitRate:
-        return l10n.bitRate;
-      case FinampFeatureChipType.bitDepth:
-        return l10n.bitDepth;
-      case FinampFeatureChipType.size:
-        return l10n.size;
-      case FinampFeatureChipType.normalizationGain:
-        return l10n.normalizationGain;
-      case FinampFeatureChipType.sampleRate:
-        return l10n.sampleRate;
-      case FinampFeatureChipType.explicit:
-        return l10n.explicit;
-    }
-  }
-}
-
-@JsonSerializable()
-@HiveType(typeId: 75)
-class FinampFeatureChipsConfiguration {
-  const FinampFeatureChipsConfiguration({required this.enabled, required this.features, required this.migrated});
-
-  @HiveField(0)
-  final bool enabled;
-
-  @HiveField(1)
-  final List<FinampFeatureChipType> features;
-
-  /// Flag for initial migration to user-configurable features
-  @HiveField(2, defaultValue: false)
-  final bool migrated;
-
-  factory FinampFeatureChipsConfiguration.fromJson(Map<String, dynamic> json) =>
-      _$FinampFeatureChipsConfigurationFromJson(json);
-
-  Map<String, dynamic> toJson() => _$FinampFeatureChipsConfigurationToJson(this);
-
-  @override
-  String toString() {
-    return jsonEncode(toJson());
-  }
-
-  // implement copyWith
-  FinampFeatureChipsConfiguration copyWith({bool? enabled, List<FinampFeatureChipType>? features}) {
-    return FinampFeatureChipsConfiguration(
-      enabled: enabled ?? this.enabled,
-      features: features ?? this.features,
-      migrated: migrated,
-    );
-  }
 }
 
 @HiveType(typeId: 76)

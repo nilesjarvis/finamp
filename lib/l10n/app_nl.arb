@@ -319,18 +319,6 @@
     "@back": {
         "description": "Label for the back button."
     },
-    "bitDepth": "Bit Diepte",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Grootte",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "sampleRate": "Sample Rate",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "showCoversOnAlbumScreenTitle": "Laat Album Hoezen Zien Voor Nummers",
     "@showCoversOnAlbumScreenTitle": {
         "description": "Title for the setting that controls if album covers are shown for each track separately on the album screen"
@@ -550,10 +538,6 @@
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
     "bufferDisableSizeConstraintsSubtitle": "Schakelt buffergrootte beperking uit ('Buffergrootte'). De buffer zal altijd ingeladen worden zoals geconfigureerd volgens de bufferlengte ('Bufferlengte'), zelfs voor grotere bestanden. Dit kan een crash veroorzaken. Vereist een herstart.",
-    "bitRate": "Bitrate",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
     "goToArtist": "Ga naar Artiest",
     "connectionInterruptedBackgroundAndroid": "Connectie werd onderbroken terwijl downloads bezig waren. Dit kan veroorzaakt zijn door aanzetten 'Ga naar Lage-Prioriteit Staat tijdens Pauzeren' of OS instellingen.",
     "@connectionInterruptedBackgroundAndroid": {
@@ -589,10 +573,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Lokaal Afspelen",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToGenre": "Ga naar Genre",
     "confirmAddedToPlaylist": "Toegevoegd aan afspeellijst.",
@@ -658,21 +638,9 @@
     "@genericToggleButtonTooltip": {
         "description": "Tooltip for toggle buttons that can be tapped to toggle their state"
     },
-    "playbackMode": "Afspeelmodus",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "additionalPeople": "Mensen",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
     "albumScreen": "Albumscherm",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
-    },
-    "showFeatureChipsToggleTitle": "Zichtbaarheid Geavanceerde Nummer Informatie",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "previousTracks": "Vorige Nummers",
     "@previousTracks": {
@@ -703,10 +671,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
     "confirmAddToQueue": "{type, select, track{track} album{album} artist{artist} playlist{playlist} genre{genre} other{item}} toegevoegd aan wachtrij",
     "@confirmAddToQueue": {
         "description": "A confirmation message that is shown after successfully adding a track to the end of the regular queue",
@@ -719,10 +683,6 @@
     "confirmShuffleToNextUp": "Geshuffeld naar Volgende",
     "@confirmShuffleToNextUp": {
         "description": "A confirmation message that is shown after successfully shuffling a list (album, playlist, etc.) to the end of the \"Next Up\" queue"
-    },
-    "normalizationGain": "Gain",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
     },
     "savedQueue": "Opgeslagen Wachtrij",
     "@savedQueue": {
@@ -812,15 +772,6 @@
     "@playbackOrderShuffledButtonTooltip": {
         "description": "Tooltip for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
     },
-    "playbackSpeedFeatureText": "x{speed} snelheid",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "playbackSpeedButtonLabel": "Afspelen op x{speed} snelheid",
     "@playbackSpeedButtonLabel": {
         "description": "Label for the button that toggles visibility. of the playback speed menu, {speed} is the current playback speed.",
@@ -869,18 +820,6 @@
     "maxConcurrentDownloads": "Max Gelijktijdige Downloads",
     "@maxConcurrentDownloads": {
         "description": "Title of setting controlling max concurrent downloads."
-    },
-    "showFeatureChipsToggleSubtitle": "Toon geavanceerde nummer informatie (codec, bitrate, etc.) op het Spelerscherm.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "playbackModeTranscoding": "Transcoderen",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackModeDirectPlaying": "Direct Afspelen",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
     },
     "shuffleToQueue": "Shuffle naar Wachtrij",
     "@shuffleToQueue": {
@@ -1000,16 +939,6 @@
     "@libraryDownloads": {
         "description": "Title for the library downloads section on the downloads screen."
     },
-    "currentVolumeFeatureText": "{volume}% volume",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "queueRestoreTitle": "Opgeslagen op {date}",
     "@queueRestoreTitle": {
         "description": "Description of when a saved queue was saved",
@@ -1117,16 +1046,6 @@
     "swipeLeftToRightAction": "Swipe naar Rechts Actie",
     "swipeRightToLeftAction": "Swipe naar Links Actie",
     "swipeLeftToRightActionSubtitle": "Actie die uitgevoerd wordt wanneer een nummer in een lijst van links naar rechts wordt gesleept.",
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "startInstantMixForIndividualTracksSwitchTitle": "Begin Instantmixes voor Losse Nummers",
     "@startInstantMixForIndividualTracksSwitchTitle": {
         "description": "Title for the switch that toggles if tapping a track on the tracks tab will start an instant mix of that track instead of just playing a single track."
@@ -1357,15 +1276,6 @@
     "@lyricsFontSizeSubtitle": {
         "description": "Subtitle for the setting that controls the font size of lyrics in the lyrics view"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "enableAutoScroll": "Zet automatisch scrollen aan",
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
@@ -1380,15 +1290,6 @@
     "addPlaylistSubheader": "Voeg nummer to aan een playlist",
     "@addPlaylistSubheader": {
         "description": "Subheader for adding to a playlist in the add to/remove from playlist popup menu"
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "showProgressOnNowPlayingBarTitle": "Toon nummer-voortgang in miniplayer",
     "@showProgressOnNowPlayingBarTitle": {

@@ -481,19 +481,11 @@
     "playlistCreated": "Llista de reproducció creada.",
     "noAlbum": "Sense Àlbum",
     "goToArtist": "Ves a l'artista",
-    "playbackModeLocal": "Reproduccint localment",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "goToGenre": "Ves a Gènere",
     "removeFromPlaylistTooltip": "Elimina d'aquesta llista de reproducció",
     "removeFromPlaylistTitle": "Eliminar d'aquesta llista de reproducció",
     "noItem": "Sense Objecte",
     "unknownArtist": "Artista desconegut",
-    "playbackModeTranscoding": "Transcodificació",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -509,10 +501,6 @@
         "description": "Snackbar message that shows when the user successfully adds items to a playlist."
     },
     "createButtonLabel": "Crea",
-    "playbackModeDirectPlaying": "Reproducció directa",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "playlistActionsMenuButtonTooltip": "Prem per afegir a la llista de reproducció. Prem sostingudament per afegir un favorit.",
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
@@ -580,15 +568,6 @@
     "confirmShuffleNext": "Barrejarà el següent",
     "@confirmShuffleNext": {
         "description": "A confirmation message that is shown after successfully shuffling a list (album, playlist, etc.) to the front of the \"Next Up\" queue"
-    },
-    "playbackSpeedFeatureText": "x{speed} velocitat",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "shuffleToNextUp": "Barreja a Pròxims",
     "@shuffleToNextUp": {
@@ -952,22 +931,6 @@
     },
     "keepScreenOnDisabled": "Desactivat",
     "artwork": "Caràtula",
-    "additionalPeople": "Persones",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "codec": "Còdec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "size": "Tamany",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "Guany",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
     "genericCancel": "Cancel·lar",
     "@genericCancel": {
         "description": "Used when the user stops an action from taking place inside a popup dialog window"
@@ -1026,16 +989,6 @@
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "downloadBitrate": "Taxa de bits al descarregar",
     "@downloadBitrate": {
         "description": "Title for Download Bitrate settings slider"
@@ -1044,24 +997,6 @@
     "enableAutoScroll": "Activar el desplaçament automàtic",
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "remainingDuration": "{duration} restant",
     "@remainingDuration": {
@@ -1090,22 +1025,6 @@
         "description": "Title for the setting that controls the alignment of lyrics in the lyrics view"
     },
     "keepScreenOnAlwaysOn": "Sempre encesa",
-    "playbackMode": "Mode de reproducció",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "bitRate": "Taxa de bits",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "Profunditat de bits",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "sampleRate": "Taxa de mostreig",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "confirm": "Confirmar",
     "refresh": "Refrescar",
     "close": "Tancar",
@@ -1167,10 +1086,6 @@
     "@radio": {
         "description": "Title for the queue source when the user is playing a track added via radio"
     },
-    "explicit": "Explícit",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
-    },
     "resetFiltersButton": "Restableix els filtres",
     "@resetFiltersButton": {
         "description": "Button to reset filters on a list of items"
@@ -1187,16 +1102,6 @@
     "autoOfflineOptionNetwork": "Xarxa local",
     "@autoOfflineOptionNetwork": {
         "description": "This is shown when the autoOffline feature is set to \"local Network\", this means offline mode will be automatically enabled when no wifi or ethernet connection is active"
-    },
-    "currentVolumeFeatureText": "Volum al {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "outputMenuDevicesSectionTitle": "Dispositius disponibles",
     "@outputMenuDevicesSectionTitle": {
@@ -1727,10 +1632,6 @@
     "trackOfflineFavorites": "Sincronitzar l'estat de tots els preferits",
     "fiveLatestAlbumsSetting": "Descarrega els 5 àlbums més recents",
     "cacheLibraryImagesSettings": "Emmagatzema a la memòria cau les imatges actuals de la biblioteca",
-    "showFeatureChipsToggleTitle": "Mostra informació avançada de la cançó",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "downloadSizeWarningCutoff": "Llindar d'advertència de la mida de descàrregues",
     "@downloadSizeWarningCutoff": {
         "description": "Title for the setting controlling when to warn about a large download"
@@ -2395,10 +2296,6 @@
     "keepScreenOnSubtitle": "Quan mantenir la pantalla encesa",
     "keepScreenOnWhilePluggedIn": "Mantenir la pantalla encesa només quan estigui endollat",
     "keepScreenOnWhilePluggedInSubtitle": "Ignora l'opció \"Mantenir la pantalla encesa\" si el dispositiu està desendollat",
-    "showFeatureChipsToggleSubtitle": "Mostra informació avançada de la cançó com el còdec, taxa de bits i més a la pantalla del reproductor.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "showCoversOnAlbumScreenSubtitle": "Mostra les portades dels àlbums per a cada cançó per separat a la pantalla de l'àlbum.",
     "@showCoversOnAlbumScreenSubtitle": {
         "description": "Subtitle for the setting that controls if album covers are shown for each track separately on the album screen"

@@ -234,10 +234,6 @@
     "noAlbum": "אין אלבום",
     "noItem": "אין פריט",
     "unknownArtist": "אמן לא ידוע",
-    "playbackModeDirectPlaying": "נגינה ישירה",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "addToQueue": "הוספה לתור",
     "@addToQueue": {
         "description": "Popup menu item title for adding an item to the end of the play queue."
@@ -296,15 +292,6 @@
     "radio": "רדיו",
     "@radio": {
         "description": "Title for the queue source when the user is playing a track added via radio"
-    },
-    "playbackSpeedFeatureText": "x{speed} מהירות",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "playbackSpeedDecreaseLabel": "הנמכת מהירות נגינה",
     "@playbackSpeedDecreaseLabel": {
@@ -714,14 +701,6 @@
     "@browsePlaylists": {
         "description": "Label for a button on the genre screen that brings you to a list of genre-filtered playlists."
     },
-    "playbackModeTranscoding": "מקודד",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackModeLocal": "מנגן מקומית",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "instantMix": "מיקס מיידי",
     "goToGenre": "מעבר לז׳אנר",
     "confirmAddedToPlaylist": "נוסף לפלייליסט.",
@@ -801,16 +780,6 @@
         "placeholders": {
             "speed": {
                 "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "{volume}% עוצמה",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -1447,38 +1416,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "additionalPeople": "אנשים",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "מצב נגינה",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "קצב סיביות",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "עומק סיביות",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "גודל",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "showFeatureChipsToggleTitle": "הצגת מידע רצועת שמע מתקדם",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "הצגת מידע מתקדם על רצועת השמע כמו Codec, קצב סיביות, ועוד במסך הנגן.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "מסך אלבום",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1650,16 +1587,6 @@
     "@volumeNormalizationModeAlbumBased": {
         "description": "'Album-based' option for the replay gain mode dropdown. In album-based mode, the album gain is always used, regardless of whether an album is playing or not."
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "swipeLeftToRightAction": "פעולה בהחלקה ימינה",
     "swipeLeftToRightActionSubtitle": "פעולה שמופעלת כשמחליקים רצועת שמע ברשימה משמאל לימין.",
     "swipeRightToLeftAction": "פעולה בהחלקה שמאלה",
@@ -1751,24 +1678,6 @@
     "enableAutoScroll": "הפעלת גלילה אוטומטית",
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
-    },
-    "numberAsKiloHertz": "{kiloHertz} קילוהרץ",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} ביט",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "remainingDuration": "{duration} נשאר",
     "@remainingDuration": {
@@ -2204,10 +2113,6 @@
         "description": "Collection info line in downloads screen lists"
     },
     "cacheLibraryImagesSettings": "שמירת תמונות של הספריה הנוכחית במטמון",
-    "sampleRate": "קצב דגימה",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "applyFilterOnGenreChipTapPrompt": "הסינון ג׳אנר הפעיל",
     "@applyFilterOnGenreChipTapPrompt": {
         "description": "A snackbar that is shown to the user if a genre filter was applied due to their selected settings"
@@ -2481,10 +2386,6 @@
     "genericToggleButtonTooltip": "לחצו לשינוי.",
     "@genericToggleButtonTooltip": {
         "description": "Tooltip for toggle buttons that can be tapped to toggle their state"
-    },
-    "normalizationGain": "עוצמה",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
     },
     "itemCountLoading": "{childType, select, track{רצועות שמע} album{אלבומים} other{פריטים}}",
     "@itemCountLoading": {
@@ -2873,10 +2774,6 @@
     "missingBlurhashWarning": "אזהרה: נראה שהשרת Jellyfin לא מוגדר נכון והוא לא מחשב blurhashes.  זה מונע מFinamp למנוע כפילויות של תמונות בהורדה.  נא לתקן את השרת ולהריץ תיקון הורדות.",
     "@missingBlurhashWarning": {
         "description": "A warning message displayed on the downloads screen if the jellyfin server is missing blurhashes."
-    },
-    "explicit": "תוכן בוטה",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "forceAudioOffloadingOnAndroidTitle": "כפיית העברת עומס השמע",
     "@forceAudioOffloadingOnAndroidTitle": {
@@ -3679,25 +3576,5 @@
                 "type": "String"
             }
         }
-    },
-    "featureChipName": "{chipName, select, explicit{תוכן בוטה} playCount{כמות נגינות} additionalPeople{אנשים נוספים} playbackMode{מצב נגינה} codec{Codec} bitRate{Bitrate} bitDepth{Bit Depth} sampleRate{Sample Rate} size{גודל} normalizationGain{Normalization Gain} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
-    "featureChipDescription": "{chipName, select, explicit{מסמן רצועות שמע שכוללות תוכן בוטה} additionalPeople{Non-artist people linked to the track, if available (writers, lyricists, etc.)} playbackMode{Streaming and transcoding status information} bitDepth{Bits per audio sample.  Only applicable to lossless codecs, generally 16 bits.} sampleRate{Audio samples per second.  Generally 44.1 kHz.} normalizationGain{Currently active ReplayGain level} size{הגודל קובץ המקורי של רצועת השמע} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
     }
 }

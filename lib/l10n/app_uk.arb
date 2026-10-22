@@ -347,10 +347,6 @@
     "@timeFractionTooltip": {
         "description": "Tooltip and accessibility label for the track progress. {currentTime} is the current position within the track, as a translated string like '2 minutes 40 seconds', and {totalTime} is the total duration of the track, also a translated string."
     },
-    "playbackModeLocal": "Відтворюється локально",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "goToArtist": "Перейти до виконавця",
     "goToGenre": "Перейти до жанру",
     "skipToNextTrackButtonTooltip": "На наступний трек",
@@ -579,10 +575,6 @@
     "@playerScreenMinimumCoverPaddingEditorTitle": {
         "description": "Title for the editor that allows the user to set the minimum padding around the album cover on the player screen."
     },
-    "playbackModeDirectPlaying": "Пряме відтворення",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "addToNextUp": "Додати до «Далі в черзі»",
     "@addToNextUp": {
         "description": "Used for adding a track to the \"Next Up\" queue at the end, to play after all prior tracks from Next Up have played"
@@ -777,15 +769,6 @@
     "@redownloadSubtitle": {
         "description": "subtitle for download transcode setting which redownloads tracks with higher allowed qualities"
     },
-    "numberAsBit": "{bit} біт",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "playbackSpeedControlSettingDescription": "Автоматично:\nFinamp намагається визначити, чи є відтворюваний трек подкастом, чи аудіокнигою (ЇЇ частиною). Це визначається як таке, якщо трек довший за {trackDuration} хв., альбом трека довший за {albumDuration} год., або чи трек має хоча б один із перерахованих жанрів: {genreList}\nЕлементи керування швидкістю з'являться в меню програвача.\n\nПоказувати:\nЗавжди показувати елементи керування швидкості.\n\nПриховувати:\nЗавжди приховувати елементи керування швидкості.",
     "@playbackSpeedControlSettingDescription": {
         "description": "Description for the dropdown that selects the replay gain mode, shown in a dialog that opens when the user presses the info icon next to the dropdown",
@@ -939,10 +922,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeTranscoding": "Транскодування",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "skipToPreviousTrackButtonTooltip": "На початок поточного треку або попереднього",
     "@skipToPreviousTrackButtonTooltip": {
         "description": "Tooltip for the button that skips to the beginning of the current track or to the previous track"
@@ -1062,15 +1041,6 @@
     },
     "showArtistChipImage": "Показувати зображення виконавців разом із їх ім'ям",
     "showArtistChipImageSubtitle": "Це впливає на невеликі попередні перегляди зображень виконавців, наприклад, на екрані відтворювача.",
-    "numberAsKiloHertz": "{kiloHertz} кГц",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "remainingDuration": "{duration} залишилось",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1127,15 +1097,6 @@
     "playbackOrderShuffledButtonTooltip": "Перемішування треків. Натисніть, щоб відтворювати за порядком.",
     "@playbackOrderShuffledButtonTooltip": {
         "description": "Tooltip for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "Швидкість x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "playbackSpeedDecreaseLabel": "Зменшити швидкість відтворення",
     "@playbackSpeedDecreaseLabel": {
@@ -1264,16 +1225,6 @@
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
     },
-    "numberAsDecibel": "{value} дБ",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "startInstantMixForIndividualTracksSwitchTitle": "Почати миттєвий мікс для окремих композицій",
     "@startInstantMixForIndividualTracksSwitchTitle": {
         "description": "Title for the switch that toggles if tapping a track on the tracks tab will start an instant mix of that track instead of just playing a single track."
@@ -1391,37 +1342,9 @@
         },
         "description": "Tooltip for the album artwork on the player screen"
     },
-    "codec": "Кодек",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "playbackMode": "Режим відтворення",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "sampleRate": "Частота дискретизації",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "normalizationGain": "Підсилення",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
     "lyricsAlignmentSubtitle": "Керує вирівнюванням текстів у поданні текстів пісень.",
     "@lyricsAlignmentSubtitle": {
         "description": "Subtitle for the setting that controls the alignment of lyrics in the lyrics view"
-    },
-    "bitDepth": "Бітова глибина",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "bitRate": "Швидкість передавання",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "additionalPeople": "Люди",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
     },
     "nowPlayingBarTooltip": "Відкрити екран відтворювача",
     "@nowPlayingBarTooltip": {
@@ -1434,10 +1357,6 @@
     "lyricsFontSizeSubtitle": "Керує розміром шрифту тексту пісень у відповідному поданні.",
     "@lyricsFontSizeSubtitle": {
         "description": "Subtitle for the setting that controls the font size of lyrics in the lyrics view"
-    },
-    "size": "Розмір",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
     },
     "albumScreen": "Екран альбому",
     "@albumScreen": {
@@ -1480,10 +1399,6 @@
     "@emptyFilteredListTitle": {
         "description": "Message shown when a list of items is filtered and no items match the filter"
     },
-    "showFeatureChipsToggleSubtitle": "Показувати на екрані програвача розширену інформацію про композицію, як-от кодек, бітрейт тощо.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "showLyricsScreenAlbumPreludeSubtitle": "Дозволяє контролювати, чи показувати обкладинку альбому над текстом пісень перед прокруткою.",
     "@showLyricsScreenAlbumPreludeSubtitle": {
         "description": "Subtitle for the setting that controls if the album cover is shown before the lyrics in the lyrics view"
@@ -1491,10 +1406,6 @@
     "showCoversOnAlbumScreenTitle": "Показувати обкладинки альбомів для композицій",
     "@showCoversOnAlbumScreenTitle": {
         "description": "Title for the setting that controls if album covers are shown for each track separately on the album screen"
-    },
-    "showFeatureChipsToggleTitle": "Показувати розширену інформацію про композицію",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "showProgressOnNowPlayingBarSubtitle": "Контролює, чи міні-програвач у програмі/панель зараз відтворюється внизу екрана музики функціонує як панель прогресу.",
     "@showProgressOnNowPlayingBarSubtitle": {
@@ -1665,16 +1576,6 @@
     "outputMenuVolumeSectionTitle": "Гучність",
     "@outputMenuVolumeSectionTitle": {
         "description": "Title for the volume section in the output menu"
-    },
-    "currentVolumeFeatureText": "{volume}% гучності",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "playOnStaleDelaySubtitle": "Скільки часу віддалений сеанс «Play On» буде вважатися активним після отримання команди. Коли вважається активним, відтворення повідомляється частіше, що може призвести до збільшення використання трафіку.",
     "@playOnStaleDelaySubtitle": {
@@ -2741,10 +2642,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "Перевантажити обробку аудіо на обладнання, якщо це підтримується пристроєм.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "Відвертий",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "volumeNormalizationIOSBaseGainEditorDescription": "Наразі, для нормалізації гучності на платформах, відмінних від Android, потрібна зміна гучності відтворення для емуляції зміни підсилення. Оскільки ми не можемо збільшити гучність вище 100%, нам потрібно зменшити гучність за замовчуванням, щоб ми могли підвищити гучність тихих треків.\n\nЗначення вказано в децибелах (дБ), де -10 дБ – це ~30% гучності, -4,5 дБ – ~60% гучності, а -2 дБ – ~80% гучності.\nДодатні значення означають, що зменшення гучності не застосовується до досягнення порогового значення (тобто підсилення -6,4 дБ (і більше позитивне) для зміщення +6,4 дБ), але запобігає підсиленню тихіших треків.\n\nВам слід встановити це значення на обернене значення найвищого (найбільш позитивного) підсилення у вашій бібліотеці, тобто встановити його на +3 дБ, якщо найвище підсилення у вашій бібліотеці становить -3 дБ (а всі інші треки мають підсилення, такі як -5 дБ, -8 дБ, -10 дБ тощо).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {

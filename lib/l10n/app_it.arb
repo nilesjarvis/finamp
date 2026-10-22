@@ -597,18 +597,6 @@
     "@volumeNormalizationModeSelectorTitle": {
         "description": "Title for the dropdown that selects the replay gain mode"
     },
-    "playbackModeDirectPlaying": "Riproduzione diretta",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Transcodifica",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackModeLocal": "Riproduzione locale",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "goToArtist": "Vai ad Artista",
     "confirmAddedToPlaylist": "Aggiunto alla playlist.",
     "@confirmAddedToPlaylist": {
@@ -789,15 +777,6 @@
     "@playbackOrderShuffledButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
     },
-    "playbackSpeedFeatureText": "velocità {speed}x",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "loopModeOneButtonLabel": "Riproduco questo brano in loop",
     "@loopModeOneButtonLabel": {
         "description": "Label for the button that toggles the loop mode between off, loop one, and loop all, while the queue is in loop one mode"
@@ -825,16 +804,6 @@
     "volumeNormalizationIOSBaseGainEditorTitle": "Valore base del Guadagno",
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "downloadItem": "Scarica",
     "@downloadItem": {
@@ -1301,38 +1270,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "additionalPeople": "Persone",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "Modalità di riproduzione",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "bitRate": "Bit Rate",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "Profondità di Bit",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Dimensioni",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "showFeatureChipsToggleSubtitle": "Mostra sullo schermo del lettore informazioni avanzate sul brano come codec, bitrate e altro.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleTitle": "Mostra informazioni avanzate sul brano",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "Schermata dell'Album",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1411,15 +1348,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "trackMenuButtonTooltip": "Menu del Brano",
     "@trackMenuButtonTooltip": {
         "description": "Tooltip for the button that opens the track menu"
@@ -1427,15 +1355,6 @@
     "quickActions": "Azioni Veloci",
     "@quickActions": {
         "description": "Title for the short menu that can be shown when long-pressing on the menu button on the player screen. Currently only used for adding to and removing from playlists."
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "remainingDuration": "{duration} rimasti",
     "@remainingDuration": {
@@ -1485,14 +1404,6 @@
     "keepScreenOnDisabled": "Disattivo",
     "keepScreenOnAlwaysOn": "Sempre acceso",
     "keepScreenOnWhilePlaying": "Quando la musica è in riproduzione",
-    "normalizationGain": "Guadagno",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Frequenza di campionamento",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "resetSettingsPromptGlobal": "Sei sicuro di voler ripristinare TUTTE le impostazioni ai valori predefiniti?",
     "@resetSettingsPromptGlobal": {
         "description": "Prompt which gets shown when the user is about to reset all settings to their default values"
@@ -1532,16 +1443,6 @@
         "description": "Shown on the downloads screen for sections without any downloaded items."
     },
     "oneLineMarqueeTextButton": "Scorri automaticamente i Titoli Lunghi",
-    "currentVolumeFeatureText": "volume {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "playOnStaleDelay": "'Riproduci Su' Timeout della Sessione",
     "@playOnStaleDelay": {
         "description": "Label for the setting that controls how long a PlayOn remote session is considered active"
@@ -2239,10 +2140,6 @@
     },
     "defaultWord": "Predefinito",
     "useDefaultButton": "Ripristina il Colore degli Accenti Predefinito",
-    "explicit": "Esplicito",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
-    },
     "amoledTheme": "Usa il tema AMOLED",
     "@amoledTheme": {
         "description": "Toggles the dark color scheme between dark gray and pure black."

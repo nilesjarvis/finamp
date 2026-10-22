@@ -436,18 +436,6 @@
         "description": "Tooltip for toggle buttons that can be tapped to toggle their state"
     },
     "artwork": "कलाकृति",
-    "additionalPeople": "लोग",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "size": "Size",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "sampleRate": "Sample Rate",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "albumScreen": "एल्बम स्क्रीन",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -817,10 +805,6 @@
             }
         }
     },
-    "playbackModeLocal": "Locally Playing",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "queue": "कतार",
     "addToQueue": "कतार में जोड़ें",
     "@addToQueue": {
@@ -942,15 +926,6 @@
         "description": "Title for the queue source for tracks were previously in the queue before an app restart and have been reloaded"
     },
     "addDownloads": "डाउनलोड्स जोड़ें",
-    "playbackSpeedFeatureText": "x{speed} गति",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "trackCountTooltip": "{totalTrackCount} ट्रैक में से {currentTrackIndex}",
     "@trackCountTooltip": {
         "description": "Tooltip and accessibility label for the queue progress. {currentTrackIndex} and {totalTrackCount} are both numbers",
@@ -996,10 +971,6 @@
     "confirmShuffleToNextUp": "Next Up तक शफ़ल किया गया",
     "@confirmShuffleToNextUp": {
         "description": "A confirmation message that is shown after successfully shuffling a list (album, playlist, etc.) to the end of the \"Next Up\" queue"
-    },
-    "playbackModeTranscoding": "ट्रांसकोडिंग",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
     },
     "list": "लिस्ट",
     "playerScreen": "प्लेयर स्क्रीन",
@@ -1075,10 +1046,6 @@
     "playlistActionsMenuButtonTooltip": "प्लेलिस्ट में जोड़ने के लिए टैप करें। पसंदीदा टॉगल करने के लिए लंबे समय तक दबाएं।",
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
-    },
-    "playbackModeDirectPlaying": "Direct Playing",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
     },
     "shuffleNext": "अगला शफ़ल करें",
     "@shuffleNext": {
@@ -1289,16 +1256,6 @@
     "@volumeNormalizationIOSBaseGainEditorSubtitle": {
         "description": "Subtitle for the input that sets the replay gain base gain on iOS and other non-Android platforms"
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "fiveLatestAlbumsSettingSubtitle": "डाउनलोड पुराने हो जाने पर उन्हें हटा दिया जाएगा। किसी एल्बम को हटाए जाने से रोकने के लिए डाउनलोड को लॉक करें।",
     "maxConcurrentDownloadsLabel": "{count} इकट्ठे डाउनलोड",
     "@maxConcurrentDownloadsLabel": {
@@ -1317,15 +1274,6 @@
     "@showNullLibraryItemsTitle": {
         "description": "Title of setting that shows tracks/albums from an unknown library in all libraries when on, or in no libraries when off."
     },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "quickActions": "क्विक एक्शन्स",
     "@quickActions": {
         "description": "Title for the short menu that can be shown when long-pressing on the menu button on the player screen. Currently only used for adding to and removing from playlists."
@@ -1341,10 +1289,6 @@
     },
     "cacheLibraryImagesSettings": "वर्तमान लाइब्रेरी छवियों को कैश करें",
     "downloadAllPlaylistsSetting": "सभी प्लेलिस्ट डाउनलोड करें",
-    "bitDepth": "Bit Depth",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
     "showCoversOnAlbumScreenTitle": "ट्रैक पर एल्बम कवर दिखाएं",
     "@showCoversOnAlbumScreenTitle": {
         "description": "Title for the setting that controls if album covers are shown for each track separately on the album screen"
@@ -1352,15 +1296,6 @@
     "volumeNormalizationModeSelectorTitle": "वॉल्यूम सामान्यीकरण मोड",
     "@volumeNormalizationModeSelectorTitle": {
         "description": "Title for the dropdown that selects the replay gain mode"
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
     },
     "showLyricsScreenAlbumPreludeSubtitle": "यह नियंत्रित करता है कि एल्बम कवर को स्क्रॉल किए जाने से पहले बोल के ऊपर दिखाया जाए या नहीं।",
     "@showLyricsScreenAlbumPreludeSubtitle": {
@@ -1402,14 +1337,6 @@
         },
         "description": "Collection info line in downloads screen lists"
     },
-    "bitRate": "Bit Rate",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "एडवांस्ड ट्रैक जानकारी दिखाएं",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "downloadTranscodeEnableTitle": "ट्रांसकोडेड डाउनलोड सक्षम करें",
     "@downloadTranscodeEnableTitle": {
         "description": "Title for Enable Transcoded Downloads dropdown"
@@ -1430,10 +1357,6 @@
         "description": "Title for the setting that controls if the in-app miniplayer / now playing bar at the botton of the music screen functions as a progress bar"
     },
     "fiveLatestAlbumsSetting": "5 नवीनतम एल्बम डाउनलोड करें",
-    "playbackMode": "प्लेबैक मोड",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
     "redownloadcomplete": "ट्रांसकोड पुनःडाउनलोड कतारबद्ध।",
     "@redownloadcomplete": {
         "description": "Mesage when Automatically Redownload Transcodes transcode setting completes operations."
@@ -1441,10 +1364,6 @@
     "lockDownload": "हमेशा डिवाइस पर रखें",
     "@lockDownload": {
         "description": "Text shown on button to require an item which is already downloaded by a parent collection, preventing it from being deleted if the parent is removed."
-    },
-    "showFeatureChipsToggleSubtitle": "प्लेयर स्क्रीन पर codec, bitrate, आदि जैसी एडवांस्ड ट्रैक जानकारी दिखाएं।",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "emptyFilteredListTitle": "कोई आइटम नहीं मिला",
     "@emptyFilteredListTitle": {
@@ -1485,10 +1404,6 @@
     },
     "keepScreenOnSubtitle": "स्क्रीन कब चालू रखें",
     "keepScreenOnAlwaysOn": "हमेशा सक्रिय",
-    "normalizationGain": "Gain",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
     "playerAlbumArtworkTooltip": "{title} के लिए कलाकृति। प्लेबैक टॉगल करने के लिए टैप करें। ट्रैक स्विच करने के लिए बाएं या दाएं स्वाइप करें।",
     "@playerAlbumArtworkTooltip": {
         "placeholders": {
@@ -1502,10 +1417,6 @@
     "nowPlayingBarTooltip": "प्लेयर स्क्रीन खोलें",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
     },
     "resetSettingsPromptGlobal": "क्या आपको यकीन है कि आप सभी सेटिंग्स को उनके डिफ़ॉल्ट रूप में रीसेट करना चाहते हैं?",
     "@resetSettingsPromptGlobal": {

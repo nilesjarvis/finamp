@@ -408,14 +408,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeDirectPlaying": "Odtwarzanie bezpośrednie",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Transkodowanie",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -425,10 +417,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Odtwarzanie lokalne",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "confirmAddedToPlaylist": "Dodano do playlisty.",
     "@confirmAddedToPlaylist": {
@@ -628,16 +616,6 @@
     "@volumeNormalizationModeAlbumBased": {
         "description": "'Album-based' option for the replay gain mode dropdown. In album-based mode, the album gain is always used, regardless of whether an album is playing or not."
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "autoloadLastQueueOnStartupSubtitle": "Po uruchomieniu aplikacji podjęta zostanie próba przywrócenia ostatnio odtwarzanej kolejki.",
     "@autoloadLastQueueOnStartupSubtitle": {
         "description": "Description of the setting to restore last queue on startup"
@@ -732,15 +710,6 @@
     "playbackOrderShuffledButtonLabel": "Wybieram utwory losowo",
     "@playbackOrderShuffledButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "Prędkość x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "loopModeNoneButtonLabel": "Bez zapętlania",
     "@loopModeNoneButtonLabel": {
@@ -883,14 +852,6 @@
     "repairDownloads": "Napraw problemy z pobranymi plikami lub metadanymi.",
     "@repairDownloads": {
         "description": "Tooltip for downloads repair button."
-    },
-    "additionalPeople": "Osoby",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "bitRate": "Bit Rate",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
     },
     "addPlaylistSubheader": "Dodaj utwór do playlisty",
     "@addPlaylistSubheader": {
@@ -1043,26 +1004,6 @@
     },
     "keepScreenOnSubtitle": "Czy pozostawić włączony ekran",
     "keepScreenOnDisabled": "Wyłączone",
-    "size": "Rozmiar",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "Wzmocnienie",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Częstotliwość próbkowania",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "Pokaż zaawansowane informacje o utworze",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "Wyświetlanie zaawansowanych informacji o utworze, takich jak kodek, bitrate i inne, na ekranie odtwarzacza.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "Ekran albumu",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -1222,24 +1163,6 @@
     "@scrollToCurrentTrack": {
         "description": "Tooltip for button that scrolls the queue list back to the current track"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} pozostało",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1322,18 +1245,6 @@
     "nowPlayingBarTooltip": "Otwórz ekran odtwarzacza",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "playbackMode": "Tryb odtwarzania",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Kodek",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitDepth": "Głębia bitowa",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
     },
     "showCoversOnAlbumScreenTitle": "Pokaż okładki albumów dla utworów",
     "@showCoversOnAlbumScreenTitle": {
@@ -1517,16 +1428,6 @@
             "radioSource": {
                 "type": "String",
                 "example": "Never Gonna Give You Up"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "{volume}% głośności",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },

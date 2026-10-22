@@ -659,14 +659,6 @@
     "@browsePlaylists": {
         "description": "Label for a button on the genre screen that brings you to a list of genre-filtered playlists."
     },
-    "playbackModeDirectPlaying": "直接再生",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "トランスコード中",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -676,10 +668,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "ローカル再生",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToArtist": "アーティストへ移動",
     "goToGenre": "ジャンルへ移動",
@@ -845,25 +833,6 @@
         "placeholders": {
             "speed": {
                 "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "{speed}倍速",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "{volume}% 音量",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -1162,10 +1131,6 @@
     "lyricsAlignmentTitle": "歌詞のアライメント",
     "@lyricsAlignmentTitle": {
         "description": "Title for the setting that controls the alignment of lyrics in the lyrics view"
-    },
-    "playbackMode": "再生モード",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
     },
     "resetFiltersButton": "フィルターのリセット",
     "@resetFiltersButton": {
@@ -1491,16 +1456,6 @@
     "volumeNormalizationIOSBaseGainEditorDescription": "現在、Android以外のプラットフォームでは音量ノーマライズを行うために、ゲインの変化をエミュレートするよう再生音量を変更する必要があります。音量を100%以上に上げることができないため、音量の小さいトラックの音量を上げられるようにデフォルトで音量を下げる必要があります。\n\n値はデシベル(dB)単位で、-10 dBは約30%の音量、-4.5 dBは約60%の音量、-2 dBは約80%の音量に相当します。\n正の値は、しきい値までは音量低減が適用されないことを意味します（つまり、+6.4 dBのオフセットの場合、-6.4 dBのゲイン（およびそれより正の値））。ただし、音量の小さいトラックがブーストされるのを防ぎます。\n\nこの値は、ライブラリ内の最も高い（最も正の）ゲインの逆数に設定する必要があります。つまり、ライブラリ内の最高ゲインが -3 dB の場合（他のすべてのトラックのゲインが -5 dB、-8 dB、-10 dB などである場合）、+3 dB に設定します。",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
         "description": "Description for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "swipeLeftToRightAction": "右スワイプのアクション",
     "swipeLeftToRightActionSubtitle": "リスト内のトラックを左から右にスワイプしたときに実行されるアクション。",
@@ -1870,24 +1825,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "残り {duration}",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -2075,42 +2012,6 @@
     "nowPlayingBarTooltip": "プレーヤー画面を開く",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "additionalPeople": "人物",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "codec": "コーデック",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "ビットレート",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "ビット深度",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "サイズ",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "ゲイン",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "サンプルレート",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "詳細なトラック情報を表示",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "プレーヤー画面にコーデック、ビットレートなどの詳細なトラック情報を表示します。",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "seeAll": "すべて見る",
     "@seeAll": {
@@ -2801,10 +2702,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "デバイスでサポートされている場合は、オーディオ処理をハードウェアにオフロードします。",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "明示的な",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "volumeControlHint": "{shortcut}で音量を調整します",
     "@volumeControlHint": {

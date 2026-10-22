@@ -476,16 +476,6 @@
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "downloadTranscodeEnableTitle": "Ativar Descargas Transcodificadas",
     "@downloadTranscodeEnableTitle": {
         "description": "Title for Enable Transcoded Downloads dropdown"
@@ -630,14 +620,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeDirectPlaying": "Reprodução Direta",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Transcodificar",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -647,10 +629,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Reprodução Local",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToGenre": "Ir para o Estilo",
     "confirmAddedToPlaylist": "Adicionado à lista de reprodução.",
@@ -877,15 +855,6 @@
     "playbackOrderShuffledButtonTooltip": "A baralhar faixas. Toque para reproduzir por ordem.",
     "@playbackOrderShuffledButtonTooltip": {
         "description": "Tooltip for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in shuffle mode"
-    },
-    "playbackSpeedFeatureText": "Velocidade x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "queuesScreen": "Filas de Espera Passadas",
     "@queuesScreen": {
@@ -1159,21 +1128,9 @@
     "@genericToggleButtonTooltip": {
         "description": "Tooltip for toggle buttons that can be tapped to toggle their state"
     },
-    "additionalPeople": "Pessoas adicionais",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "Modo de Reprodução",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
     "albumScreen": "Ecrã do Álbum",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
-    },
-    "showFeatureChipsToggleTitle": "Mostrar Informação Avançada da Faixa",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "showCoversOnAlbumScreenSubtitle": "Mostra as capas dos álbuns para cada faixa em separado no ecrã do álbum.",
     "@showCoversOnAlbumScreenSubtitle": {
@@ -1336,18 +1293,6 @@
     "nowPlayingBarTooltip": "Abrir Ecrã de Reprodução",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "size": "Tamanho",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "Ganho",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "showFeatureChipsToggleSubtitle": "Mostrar informação avançada da faixa: codec, taxa de bits, e mais no ecrã de reprodução.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "showCoversOnAlbumScreenTitle": "Mostrar Capas dos Álbuns para Faixas",
     "@showCoversOnAlbumScreenTitle": {
@@ -1562,15 +1507,6 @@
         "description": "Message shown when the user tries to apply a genre filter to an album."
     },
     "recentlyAdded": "Adicionado Recentemente",
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "mostPlayed": "Mais Tocados",
     "downloadButtonDisabledGenreFilterTooltip": "Por favor remova o filtro de estilo para ativar as ações de descarga.",
     "@downloadButtonDisabledGenreFilterTooltip": {
@@ -1617,15 +1553,6 @@
         "description": "Label for the setting that controls how long a PlayOn remote session is considered active"
     },
     "transcodingStreamingFormatSubtitle": "Selecione o formato a usar quando faz streaming de áudio transcodificado. As faixas já em fila não serão afetadas.",
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "oneLineMarqueeTextButton": "Auto-deslocar Títulos Longos",
     "allLibraries": "Todas as Bibliotecas",
     "@allLibraries": {
@@ -1695,16 +1622,6 @@
         "description": "Options in Select Download Codec dropdown"
     },
     "exportLogs": "Salvar relatórios",
-    "currentVolumeFeatureText": "Volume {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "fixedGridTileSizeEnum": "{size, select, tiny{minúsculo} verySmall{muito pequeno} small{pequeno} medium{médio} large{grande} veryLarge{muito grande} huge{enorme} giant{gigante} other{???}}",
     "@fixedGridTileSizeEnum": {
         "placeholders": {
@@ -1760,14 +1677,6 @@
                 "type": "String"
             }
         }
-    },
-    "bitRate": "Taxa de Bits",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "Profundidade de Bit",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
     },
     "seeAll": "Ver Todos",
     "@seeAll": {
@@ -1866,10 +1775,6 @@
     "@lyricsScreenButtonTitle": {
         "description": "Label for the button for opening the lyrics screen"
     },
-    "sampleRate": "Taxa de Amostragem",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "formattedRelativeTime": "{type, select, just_now{agora mesmo} minutes{{value} à minutos} hours{{value} à horas} yesterday{ontem} days{{value, plural, =1{à 1 dia} other{{value} à dias}}} other{value}}",
     "@formattedRelativeTime": {
         "description": "Returns a relative time string based on how long ago something happened. Used for various DateTime values such as Date Last Played and Date Added.",
@@ -1963,10 +1868,6 @@
     "audioFadeInDurationSettingTitle": "Duração do aumentar volume gradual do Áudio",
     "@audioFadeInDurationSettingTitle": {
         "description": "Title for the audio fade-in duration setting."
-    },
-    "codec": "Codec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
     },
     "releaseDateFormatYear": "Ano",
     "@releaseDateFormatYear": {
@@ -2751,10 +2652,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "Descarga de áudio processada pelo hardware, se suportado pelo dispositivo.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "Explícito",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "volumeNormalizationIOSBaseGainEditorDescription": "Atualmente, a Normalização de Volume em plataformas diferentes de Android requer a alteração do volume de reprodução para emular a mudança de ganho. Como não podemos aumentar o volume acima de 100%, precisamos diminuir o volume predefinido para podermos aumentar o volume das faixas mais baixas. \n\nO valor é em decibéis (dB), onde -10 dB corresponde a ~30% de volume, -4,5 dB a ~60% de volume e -2 dB a ~80% de volume.\nValores positivos significam que nenhuma redução de volume é aplicada até ao limiar (isto é, ganho -6.4 dB (e mais positivo) para um desvio de +6.4 dB), mas previne que as faixas mais silenciosas sejam amplificadas.\n\nVocê deve definir isto para o inverso do ganho mais alto (mais positivo) na sua biblioteca, isto é, definir para +3 dB se o ganho mais alto na sua biblioteca for -3 dB (e todas as outras faixas terem ganhos como -5 dB, -8 dB, -10 dB, etc.).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
@@ -3597,16 +3494,6 @@
         "description": "Notification on sort and filter menu that currently pending changes will be automatically applied on close."
     },
     "removeFromQueue": "Remover Da Fila de Espera",
-    "featureChipName": "{chipName, select, explicit{Explícito} playCount{Contagem de Reprodução} additionalPeople{Pessoas Adicionais} playbackMode{Modo de Reprodução} codec{Codec} bitRate{Taxa de Bits} bitDepth{Profundidade de Bit} sampleRate{Taxa de Amostragem} size{Tamanho} normalizationGain{Ganho de Normalização} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
     "maximizePlayer": "Maximizar o reprodutor",
     "collapsePlayer": "Colapsar reprodutor para a barra lateral",
     "addSpecialDownloads": "Adicionar descarga especial",
@@ -3622,16 +3509,6 @@
                 "example": "Never Gonna Give You Up"
             }
         }
-    },
-    "featureChipDescription": "{chipName, select,  explicit{Marcas e faixas que contém conteúdo explícito} additionalPeople{Pessoas não-artistas vinculadas à faixa, se disponíveis (compositores, escritores, etc.)} playbackMode{Informação de estado de fluxo e transcodificação} bitDepth{Bits por amostra de áudio.  Apenas aplicável a codecs sem perdas, geralmente 16 bits.} sampleRate{Amostras de áudio por segundo.  Geralmente 44.1 kHz.} normalizationGain{Nível de ganho de reprodução atualmente ativo}  size{O tamanho do ficheiro original da faixa} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
     },
     "volumeControlDisabledCastingHint": "Áudio está a ser transmitido para um dispositivo que não suporta controle do volume na aplicação.",
     "@volumeControlDisabledCastingHint": {

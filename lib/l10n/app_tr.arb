@@ -451,14 +451,6 @@
             }
         }
     },
-    "playbackModeLocal": "Yerel oynatma",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
-    "playbackModeDirectPlaying": "Doğrudan oynatma",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -551,16 +543,6 @@
     "volumeNormalizationIOSBaseGainEditorTitle": "Temel Kazanç",
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "downloadItem": "İndir",
     "@downloadItem": {
@@ -786,34 +768,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "playbackMode": "Oynatma Modu",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Kodlayıcı",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "Bit Hızı",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "Bit Derinliği",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Boyut",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "showFeatureChipsToggleTitle": "Gelişmiş Parça Bilgilerini Göster",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "Oynatıcı ekranında kodlayıcı, bit hızı ve daha fazla gelişmiş parça bilgilerini göster.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "emptyFilteredListTitle": "Hiçbir öge bulunamadı",
     "@emptyFilteredListTitle": {
         "description": "Message shown when a list of items is filtered and no items match the filter"
@@ -848,36 +802,9 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackSpeedFeatureText": "{speed}x hız",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
     "playbackSpeedIncreaseLabel": "Oynatma hızını artır",
     "@playbackSpeedIncreaseLabel": {
         "description": "Label for the button in the speed menu that increases the playback speed."
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "lyricsAlignmentTitle": "Şarkı sözü hizalaması",
     "@lyricsAlignmentTitle": {
@@ -905,14 +832,6 @@
     "resetFiltersButton": "Süzgeci sıfırla",
     "@resetFiltersButton": {
         "description": "Button to reset filters on a list of items"
-    },
-    "normalizationGain": "Kazanç",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Örnek Hızı",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
     },
     "albumScreen": "Albüm Ekranı",
     "@albumScreen": {
@@ -1040,10 +959,6 @@
     "timeFractionTooltip": "{currentTime} / {totalTime}",
     "@timeFractionTooltip": {
         "description": "Tooltip and accessibility label for the track progress. {currentTime} is the current position within the track, as a translated string like '2 minutes 40 seconds', and {totalTime} is the total duration of the track, also a translated string."
-    },
-    "playbackModeTranscoding": "Kod dönüştürme",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
     },
     "clearNextUp": "Sonrakileri Temizle",
     "@clearNextUp": {
@@ -1424,16 +1339,6 @@
     "playbackOrderLinearButtonLabel": "Sırayla oynatılıyor",
     "@playbackOrderLinearButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in linear/in-order mode"
-    },
-    "currentVolumeFeatureText": "{volume}% ses",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "togglePlaybackButtonTooltip": "Oynat veya duraklat",
     "@togglePlaybackButtonTooltip": {

@@ -398,10 +398,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "showFeatureChipsToggleSubtitle": "在播放介面上顯示進階歌曲資訊，例如編碼格式、位元率等。",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "resetSettingsPromptGlobalConfirm": "重置所有設定",
     "@resetSettingsPromptGlobalConfirm": {
         "description": "A differently worded Confirm button to prevent the user from instandly clicking confirm because they are about to reset all settings to their default value"
@@ -454,10 +450,6 @@
     "@playerScreen": {
         "description": "Name for the expanded player"
     },
-    "playbackModeLocal": "本地播放",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -470,14 +462,6 @@
     },
     "goToArtist": "檢視藝人",
     "goToGenre": "檢視類型",
-    "normalizationGain": "增益",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "取樣率",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "hours": "小時",
     "trackCountTooltip": "第 {currentTrackIndex} 首，共 {totalTrackCount} 首",
     "@trackCountTooltip": {
@@ -494,38 +478,6 @@
         }
     },
     "addToMorePlaylistsTitle": "加入播放清單",
-    "playbackModeDirectPlaying": "原生播放",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "轉碼",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackMode": "重播模式",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "編碼格式",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "位元率",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "位深度",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "檔案大小",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "showFeatureChipsToggleTitle": "顯示歌曲詳情",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "albumScreen": "專輯介面",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -757,15 +709,6 @@
     "playbackSpeedButtonLabel": "x{speed} 倍速播放",
     "@playbackSpeedButtonLabel": {
         "description": "Label for the button that toggles visibility. of the playback speed menu, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "x{speed} 倍速",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
         "placeholders": {
             "speed": {
                 "type": "double"
@@ -1192,16 +1135,6 @@
     "@volumeNormalizationIOSBaseGainEditorTitle": {
         "description": "Title for the input that sets the replay gain base gain on iOS and other non-Android platforms"
     },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "downloadItem": "下載",
     "@downloadItem": {
         "description": "Option to download item in long-press menu."
@@ -1344,15 +1277,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
     "alignmentOptionEnd": "靠右對齊",
     "@alignmentOptionEnd": {
         "description": "Alignment option for things like the lyrics view. End means right-aligned in LTR languages and left-aligned in RTL languages."
@@ -1452,15 +1376,6 @@
         "description": "Subtitle for the setting controlling when to warn about a large download"
     },
     "removeFromPlaylistConfirm": "移除",
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "剩餘 {duration}",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1546,10 +1461,6 @@
         },
         "description": "Tooltip for album artwork on track and album tiles as well as the album screen"
     },
-    "additionalPeople": "其他人員",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
     "trackOfflineFavorites": "同步所有收藏狀態",
     "showProgressOnNowPlayingBarTitle": "在應用程式內的迷你播放器上顯示歌曲播放進度",
     "@showProgressOnNowPlayingBarTitle": {
@@ -1634,16 +1545,6 @@
     "appearsOnAlbums": "收錄於",
     "albumArtists": "專輯藝人",
     "performingArtists": "演出藝人",
-    "currentVolumeFeatureText": "{volume}% 音量",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "playOnStaleDelay": "「遠端播放」連線逾時",
     "@playOnStaleDelay": {
         "description": "Label for the setting that controls how long a PlayOn remote session is considered active"
@@ -2726,10 +2627,6 @@
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
     },
-    "explicit": "不雅內容",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
-    },
     "lyricsEmptyStateLoading": "載入歌詞中…",
     "@lyricsEmptyStateLoading": {
         "description": "Message shown while lyrics are being loaded"
@@ -3600,26 +3497,6 @@
         "description": "Notification on sort and filter menu that currently pending changes will be automatically applied on close."
     },
     "removeFromQueue": "從播放佇列中移除",
-    "featureChipName": "{chipName, select, explicit{限制級內容} playCount{播放次數} additionalPeople{其他參與人員} playbackMode{播放模式} codec{編碼格式} bitRate{位元率} bitDepth{位元深度} sampleRate{取樣率} size{檔案大小} normalizationGain{音量標準化} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
-    "featureChipDescription": "{chipName, select, explicit{標示含有兒童不宜內容的歌曲} additionalPeople{與歌曲相關的其他人員（如作曲者、作詞者等）} playbackMode{串流與轉碼狀態資訊} bitDepth{每個音訊取樣的位元數。僅適用於無損編碼格式，通常為 16 位元。} sampleRate{每秒的音訊取樣次數，通常為 44.1 kHz。} normalizationGain{目前套用的重播增益值} size{歌曲原始檔案的大小} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
-    },
     "maximizePlayer": "展開播放介面",
     "collapsePlayer": "將播放介面縮至右側",
     "addSpecialDownloads": "新增自訂下載",

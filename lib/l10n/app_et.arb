@@ -531,10 +531,6 @@
     "@addToNextUp": {
         "description": "Used for adding a track to the \"Next Up\" queue at the end, to play after all prior tracks from Next Up have played"
     },
-    "playbackModeDirectPlaying": "Otseesitus",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "goToArtist": "Mine esitaja lehele",
     "removeFavorite": "Eemalda lemmikutest",
     "addFavorite": "Lisa lemmikutesse",
@@ -568,14 +564,6 @@
                 "type": "int"
             }
         }
-    },
-    "playbackModeTranscoding": "Transkoodimine",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
-    "playbackModeLocal": "Kohalik esitus",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "showFastScroller": "Kuva kiirkerimisriba",
     "goToGenre": "Mine žanri juurde",
@@ -914,25 +902,6 @@
         "placeholders": {
             "speed": {
                 "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "x{speed} kiirus",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "Helitugevus {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
             }
         }
     },
@@ -1288,16 +1257,6 @@
     "volumeNormalizationIOSBaseGainEditorDescription": "Praegu nõuab helitugevuse normaliseerimine muudel platvormidel peale Androidi esituse helitugevuse muutmist, et emuleerida võimenduse nihet. Kuna me ei saa tõsta helitugevust üle 100%, peame vaikimisi helitugevust vähendama, et saaksime vaiksemaid lugusid võimendada.\n\nVäärtus on detsibellides (dB), kus -10 dB on ~30% helitugevust, -4,5 dB on ~60% helitugevust ja -2 dB on ~80% helitugevust.\nPositiivsed väärtused tähendavad, et kuni läveni helitugevust ei vähendata (nt +6,4 dB nihke puhul rakendub see -6,4 dB ja sellest suurema võimenduse puhul), kuid see takistab vaiksemate lugude võimendamist.\n\nSelle väärtuse peaksid määrama oma muusikakogu suurima (kõige positiivsema) võimenduse vastandväärtuseks. Näiteks määra see väärtusele +3 dB, kui sinu kogu suurim võimendus on -3 dB (ja kõigil teistel lugudel on see näiteks -5 dB, -8 dB, -10 dB jne).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
         "description": "Description for the input that sets the replay gain base gain on iOS and other non-Android platforms"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "swipeLeftToRightAction": "Paremale nipsamise toiming",
     "swipeLeftToRightActionSubtitle": "Toiming, mis käivitatakse loendis loo nipsamisel vasakult paremale.",
@@ -1667,24 +1626,6 @@
     "@enableAutoScroll": {
         "description": "Tooltip for button that can be used to re-enable auto scroll on the lyrics view after the user manually scrolled"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bitti",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} jäänud",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -1904,46 +1845,6 @@
     "nowPlayingBarTooltip": "Ava pleieri vaade",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "additionalPeople": "Inimesed",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "playbackMode": "Esitusrežiim",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Koodek",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "Bitikiirus",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "bitDepth": "Bititihedus",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Suurus",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "normalizationGain": "Võimendus",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "sampleRate": "Diskreetimissagedus",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
-    "showFeatureChipsToggleTitle": "Kuva loo lisateave",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "showFeatureChipsToggleSubtitle": "Kuva mängija vaates koodekit, bitikiirust ja muud tehnilist teavet.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "seeAll": "Kuva kõik",
     "@seeAll": {
@@ -2793,10 +2694,6 @@
     "forceAudioOffloadingOnAndroidSubtitle": "Suuna helitöötlus seadme riistvarasse, kui seade seda toetab.",
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
-    },
-    "explicit": "Explicit (ebasobiv sisu)",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
     },
     "multichannelHandlingTitle": "Mitmekanalilise transkoodimise haldus",
     "@multichannelHandlingTitle": {

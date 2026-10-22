@@ -458,7 +458,6 @@ enum PlayerHideable {
   bottomActions(0, 27, 2),
   progressSlider(0, 20, 4),
   twoLineTitle(0, 46, 3),
-  features(0, 20, 3),
   loopShuffleButtons(96, 0, 0),
   unhideableElements(144, 165, 0),
   controlsPaddingSmall(0, 8, 2),
@@ -486,7 +485,6 @@ class PlayerHideableController {
     PlayerHideable.bigPlayButton,
     PlayerHideable.bottomActions,
     PlayerHideable.controlsPaddingSmall,
-    PlayerHideable.features,
     PlayerHideable.twoLineTitle,
     PlayerHideable.progressSlider,
   ];
@@ -620,9 +618,6 @@ class PlayerHideableController {
     if (ref.watch(finampSettingsProvider.suppressPlayerPadding)) {
       _visible.remove(PlayerHideable.controlsPaddingSmall);
       _visible.remove(PlayerHideable.controlsPaddingBig);
-    }
-    if (!ref.watch(finampSettingsProvider.featureChipsConfiguration).enabled) {
-      _visible.remove(PlayerHideable.features);
     }
   }
 

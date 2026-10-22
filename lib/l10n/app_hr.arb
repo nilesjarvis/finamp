@@ -231,16 +231,6 @@
     "showFastScroller": "Prikaži traku za brzo listanje",
     "interactions": "Interakcije",
     "about": "O aplikaciji Finamp",
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
     "queueRestoreTitle": "Spremljeno {date}",
     "@queueRestoreTitle": {
         "description": "Description of when a saved queue was saved",
@@ -368,10 +358,6 @@
     "serverUrlInfoButtonTooltip": "Pomoć za URL servera",
     "@serverUrlInfoButtonTooltip": {
         "description": "Tooltip for the button that shows the extra info dialog for which IP to use for remote access, and info on whether or not the user needs to specify a port."
-    },
-    "playbackModeTranscoding": "Transkodiranje",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
     },
     "connectionInterruptedBackground": "Veza je prekinuta tijekom preuzimanja u pozadini. Provjeri postavke OS-a.",
     "@connectionInterruptedBackground": {
@@ -582,24 +568,6 @@
     "@scrollToCurrentTrack": {
         "description": "Tooltip for button that scrolls the queue list back to the current track"
     },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "remainingDuration": "{duration} preostalo",
     "@remainingDuration": {
         "description": "Displays duration of unplayed tracks. {duration} is a pre-formatted string.",
@@ -656,18 +624,6 @@
     "nowPlayingBarTooltip": "Otvori ekran playera",
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
-    },
-    "playbackMode": "Modus reprodukcije",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Kodek",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "size": "Veličina",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
     },
     "showCoversOnAlbumScreenSubtitle": "Prikaži omote albuma za svaku pjesmu pjedinačno na ekranu albuma.",
     "@showCoversOnAlbumScreenSubtitle": {
@@ -773,10 +729,6 @@
         }
     },
     "addToMorePlaylistsTitle": "Dodaj u još playlista",
-    "playbackModeDirectPlaying": "Izravna reprodukcija",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "togglePlaybackButtonTooltip": "Uključi/Isključi reprodukciju",
     "@togglePlaybackButtonTooltip": {
         "description": "Tooltip for the button that toggles playback"
@@ -836,10 +788,6 @@
     "keepScreenOnWhileLyrics": "Tijekom prikazivanja teksta pjesme",
     "keepScreenOnWhilePluggedIn": "Ostavi ekran uključenim kada je uređaj priključen na struju",
     "keepScreenOnWhilePluggedInSubtitle": "Zanemari postavku za ostavljanje ekrana uključenim kada uređaj nije priključen na struju",
-    "normalizationGain": "Pojačanje",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
     "albumScreen": "Ekran albuma",
     "@albumScreen": {
         "description": "Name for the view/screen that shows albums"
@@ -869,10 +817,6 @@
         "description": "Name for the expanded player"
     },
     "seconds": "Sekunde",
-    "playbackModeLocal": "Lokalna reprodukcija",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "shareOfflineListens": "Dijeli offline slušanja",
     "@shareOfflineListens": {
         "description": "Button for exporting the JSON file containing any playback events that couldn't be submitted to the server, either because offline mode was enabled or the connection failed"
@@ -1163,25 +1107,6 @@
     "playbackOrderLinearButtonLabel": "Reproducira se redom",
     "@playbackOrderLinearButtonLabel": {
         "description": "Label for the button that toggles the playback order between linear/in-order and shuffle, while the queue is in linear/in-order mode"
-    },
-    "playbackSpeedFeatureText": "{speed}-struka brzina",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "currentVolumeFeatureText": "Glasnoća od {volume} %",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "loopModeOneButtonLabel": "Ponavljaj ovu pjesmu",
     "@loopModeOneButtonLabel": {
@@ -1565,10 +1490,6 @@
             }
         },
         "description": "Tooltip for album artwork on track and album tiles as well as the album screen"
-    },
-    "additionalPeople": "Ljudi",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
     },
     "seeAll": "Pogledaj sve",
     "@seeAll": {

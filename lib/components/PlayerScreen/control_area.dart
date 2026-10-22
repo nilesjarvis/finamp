@@ -5,7 +5,6 @@ import 'package:finamp/screens/player_screen.dart';
 import 'package:finamp/utils/platform_helper.dart';
 import 'package:flutter/material.dart';
 
-import 'feature_chips.dart';
 import 'player_buttons.dart';
 import 'progress_slider.dart';
 
@@ -19,7 +18,6 @@ class ControlArea extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        if (controller.shouldShow(PlayerHideable.features)) const FeatureChips(),
         if (controller.shouldShow(PlayerHideable.progressSlider))
           if (isDesktop)
             Tooltip(

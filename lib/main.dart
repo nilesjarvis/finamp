@@ -145,7 +145,6 @@ Future<void> main(List<String> args, {bool integrationTesting = false, bool logi
     _migrateSortOptions();
     _migrateGridSize();
     _migrateHomescreen();
-    _migrateFeatureChips();
     _migrateDeviceId();
     await _migrateThemeModeLocale();
     _mainLog.info("Completed applicable migrations");
@@ -315,6 +314,8 @@ Future<void> setupHive() async {
   Hive.registerAdapter(ColorAdapter());
   Hive.registerAdapter(LocaleAdapter());
   Hive.registerAdapter(FinampStorableQueueInfoMigrationAdapter());
+  Hive.registerAdapter(FinampFeatureChipTypeMigrationAdapter());
+  Hive.registerAdapter(FinampFeatureChipsConfigurationMigrationAdapter());
 
   await Future.wait([
     Hive.openBox<FinampSettings>("FinampSettings", path: dir.path),
@@ -617,18 +618,6 @@ void _migrateHomescreen() {
 
   if (changed) {
     FinampSettingsHelper.overwriteFinampSettings(finampSettings);
-  }
-}
-
-void _migrateFeatureChips() {
-  if (!FinampSettingsHelper.finampSettings.featureChipsConfiguration.migrated) {
-    FinampSetters.setFeatureChipsConfiguration(
-      FinampFeatureChipsConfiguration(
-        enabled: FinampSettingsHelper.finampSettings.featureChipsConfiguration.enabled,
-        features: DefaultSettings.featureChipsConfiguration.features,
-        migrated: true,
-      ),
-    );
   }
 }
 

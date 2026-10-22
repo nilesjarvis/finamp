@@ -417,14 +417,6 @@
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
     },
-    "playbackModeDirectPlaying": "Suoratoistaa",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
-    "playbackModeTranscoding": "Transkoodaus",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -434,10 +426,6 @@
                 "example": "320"
             }
         }
-    },
-    "playbackModeLocal": "Toistaa paikallisesti",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
     },
     "goToArtist": "Mene artistiin",
     "goToGenre": "Mene tyylilajiin",
@@ -500,15 +488,6 @@
     "playbackSpeedButtonLabel": "Toistetaan nopeudella {speed}x",
     "@playbackSpeedButtonLabel": {
         "description": "Label for the button that toggles visibility. of the playback speed menu, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
-    },
-    "playbackSpeedFeatureText": "{speed}x nopeus",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
         "placeholders": {
             "speed": {
                 "type": "double"
@@ -663,18 +642,6 @@
     "fontSizeOptionLarge": "Suuri",
     "@fontSizeOptionLarge": {
         "description": "Font size option for things like the lyrics view. Large means a larger font size."
-    },
-    "additionalPeople": "Tekijät",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "normalizationGain": "Vahvistus",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
-    },
-    "showFeatureChipsToggleSubtitle": "Näytä kappaleen lisätiedot kuten koodekki, bittinopeus jne. soitinnäkymässä.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
     },
     "showCoversOnAlbumScreenSubtitle": "Näytä albumin kansikuva jokaiselle kappaleelle erikseen albuminäkymässä.",
     "@showCoversOnAlbumScreenSubtitle": {
@@ -853,10 +820,6 @@
     "@downloadSizeWarningCutoffSubtitle": {
         "description": "Subtitle for the setting controlling when to warn about a large download"
     },
-    "sampleRate": "Näytetaajuus",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
-    },
     "keepScreenOnWhilePluggedInSubtitle": "Ohita 'pidä näyttö päällä'-asetus, jos laite on irroitettu latauksesta",
     "resetSettingsPromptGlobalConfirm": "Nollaa KAIKKI asetukset",
     "@resetSettingsPromptGlobalConfirm": {
@@ -868,23 +831,10 @@
     },
     "prioritizePlayerCover": "Priorisoi albumin kansikuva",
     "prioritizePlayerCoverSubtitle": "Priorisoi näyttämään isompi albumin kansikuva soittimen näytöllä. Ei-kriittiset ohjaukset piilotetaan herkemmin pienillä näyttökooilla.",
-    "showFeatureChipsToggleTitle": "Näytä kappaleen lisätiedot",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "showArtistChipImageSubtitle": "Tämä vaikuttaa pienten artistikuvien esikatseluun, mm. soitinnäkymässä artistin nimen edessä.",
     "lockDownload": "Säilytä aina laitteella",
     "@lockDownload": {
         "description": "Text shown on button to require an item which is already downloaded by a parent collection, preventing it from being deleted if the parent is removed."
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
     },
     "allPlaylistsInfoSettingSubtitle": "Synkronoi kaikkien soittolistojen metadata parantaaksesi soittolistojen käyttökokemusta",
     "addRemoveFromPlaylist": "Lisää tai poista soittolistoilta",
@@ -936,16 +886,6 @@
     "shareOfflineListens": "Jaa offline-kuuntelut",
     "@shareOfflineListens": {
         "description": "Button for exporting the JSON file containing any playback events that couldn't be submitted to the server, either because offline mode was enabled or the connection failed"
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
     },
     "confirmDownloadStarted": "Lataus aloitettu",
     "@confirmDownloadStarted": {
@@ -1163,15 +1103,6 @@
             }
         },
         "description": "Dropdown option to download original version of tracks"
-    },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
     },
     "enableAutoScroll": "Ota käytöön automaattinen vieritys",
     "@enableAutoScroll": {
@@ -1500,26 +1431,6 @@
             }
         }
     },
-    "bitDepth": "Bittisyvyys",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "playbackMode": "Toistotila",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
-    "codec": "Koodekki",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
-    "bitRate": "Bittinopeus",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "size": "Koko",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
     "trackOfflineFavoritesSubtitle": "Tämä mahdollistaa ajantasaisempien suosikkitilojen näyttämisen offline-tilassa. Ei lataa ylimääräisiä tiedostoja.",
     "deleteFromTargetConfirmButton": "Poista {target, select, device{laitteelta} server{palvelimelta} other{}}",
     "@deleteFromTargetConfirmButton": {
@@ -1640,16 +1551,6 @@
     "libraryDownloads": "Kirjaston lataukset",
     "@libraryDownloads": {
         "description": "Title for the library downloads section on the downloads screen."
-    },
-    "currentVolumeFeatureText": "{volume}% taso",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
     },
     "enablePlayonTitle": "Kytke 'Toista laitteella'-tuki päälle",
     "@enablePlayonTitle": {
@@ -2745,10 +2646,6 @@
     "@forceAudioOffloadingOnAndroidSubtitle": {
         "description": "Subtitle for the setting that controls audio offloading on Android."
     },
-    "explicit": "Säädytön sisältö",
-    "@explicit": {
-        "description": "Label for content that is considered explicit, usually marked by an 'E' in music apps"
-    },
     "volumeNormalizationIOSBaseGainEditorDescription": "Tällä hetkellä äänenvoimakkuuden normalisointi muilla alustoilla kuin Androidilla vaatii äänenvoimakkuuden muuttamista vahvistuksen muutoksen emuloimiseksi. Koska emme voi nostaa äänenvoimakkuutta yli 100 %:n, meidän on laskettava äänenvoimakkuutta oletusarvoisesti, jotta voimme vahvistaa hiljaisten kappaleiden äänenvoimakkuutta.\n\nArvo ilmoitetaan desibeleinä (dB), missä -10 dB on n. 30 % äänenvoimakkuus, -4,5 dB on n. 60 % äänenvoimakkuus ja -2 dB on n. 80 % äänenvoimakkuus.\nPositiiviset arvot tarkoittavat, ettei äänenvoimakkuuden vähennystä käytetä kynnysarvoon asti (esim. -6,4 dB vahvistus (ja sitä positiivisemmat) +6,4 dB siirtymällä), mutta tämä estää hiljaisempien kappaleiden vahvistamisen.\n\nTämä tulisi asettaa kirjastosi korkeimman (positiivisimman) vahvistuksen vastaluvuksi, eli aseta arvoksi +3 dB, jos kirjastosi korkein vahvistus on -3 dB (ja kaikilla muilla kappaleilla vahvistukset ovat esimerkiksi -5 dB, -8 dB, -10 dB jne.).",
     "@volumeNormalizationIOSBaseGainEditorDescription": {
         "description": "Description for the input that sets the replay gain base gain on iOS and other non-Android platforms"
@@ -3590,26 +3487,6 @@
         "description": "Notification on sort and filter menu that currently pending changes will be automatically applied on close."
     },
     "removeFromQueue": "Poista jonosta",
-    "featureChipName": "{chipName, select, explicit{Explisiittinen} playCount{Toistokerrat} additionalPeople{Muut tekijät} playbackMode{Toistotila} codec{Koodekki} bitRate{Bittinopeus} bitDepth{Bittisyvyys} sampleRate{Näytteenottotaajuus} size{Koko} normalizationGain{Normalisointivahvistus} other{{chipName}}}",
-    "@featureChipName": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Titles for settings controlling which pieces of advanced track info are displayed."
-    },
-    "featureChipDescription": "{chipName, select, explicit{Merkitsee kappaleet, joissa on sopimatonta sisältöä} additionalPeople{Muut kappaleeseen liitetyt henkilöt kuin esiintyjät, jos saatavilla (säveltäjät, sanoittajat jne.)} playbackMode{Suoratoisto- ja uudelleenkoodaustilan tiedot} bitDepth{Bittiä ääninäytettä kohden. Koskee vain häviöttömiä koodekkeja, yleensä 16 bittiä.} sampleRate{Ääninäytettä sekunnissa. Yleensä 44,1 kHz.} normalizationGain{Tällä hetkellä aktiivinen ReplayGain-taso} size{Alkuperäistiedoston koko} other{null}}",
-    "@featureChipDescription": {
-        "placeholders": {
-            "chipName": {
-                "type": "String",
-                "example": "playCount"
-            }
-        },
-        "description": "Descriptions of different pieces of advanced track info."
-    },
     "maximizePlayer": "Laajenna soitin",
     "collapsePlayer": "Pienennä soitin sivupalkkiin",
     "addSpecialDownloads": "Lisää erikoislatauksia",

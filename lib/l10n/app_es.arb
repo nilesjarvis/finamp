@@ -494,14 +494,6 @@
     "@nowPlayingBarTooltip": {
         "description": "Tooltip for the now playing bar at the bottom of the screen"
     },
-    "additionalPeople": "Personas",
-    "@additionalPeople": {
-        "description": "Label for the feature chips showing additional people in the credits of a track or album"
-    },
-    "codec": "Códec",
-    "@codec": {
-        "description": "Label for the feature chips showing the codec of a track"
-    },
     "showCoversOnAlbumScreenTitle": "Mostrar Arte de Álbumes en las Canciones",
     "@showCoversOnAlbumScreenTitle": {
         "description": "Title for the setting that controls if album covers are shown for each track separately on the album screen"
@@ -510,20 +502,6 @@
     "volumeNormalizationModeAlbumOnly": "Solo para álbumes",
     "@volumeNormalizationModeAlbumOnly": {
         "description": "'Only for Albums' option for the replay gain mode dropdown. In albums-only mode, Volume Normalization is only applied while playing albums (using the album gain), but not for individual tracks."
-    },
-    "numberAsDecibel": "{value} dB",
-    "@numberAsDecibel": {
-        "description": "Label for a number that represents a decibel value. The value will be the decibel value.",
-        "placeholders": {
-            "value": {
-                "type": "double",
-                "example": "-9.6"
-            }
-        }
-    },
-    "sampleRate": "Tasa de Muestreo",
-    "@sampleRate": {
-        "description": "Label for the feature chips showing the sample rate of a track"
     },
     "albumScreen": "Ventana del Álbum",
     "@albumScreen": {
@@ -537,10 +515,6 @@
     "@volumeNormalizationModeSelectorDescription": {
         "description": "Description for the dropdown that selects the replay gain mode, shown in a dialog that opens when the user presses the info icon next to the dropdown"
     },
-    "playbackMode": "Modo de Reproducción",
-    "@playbackMode": {
-        "description": "Label for the feature chips showing the playback mode of a track. See [playbackModeLocal], [playbackModeDirectPlaying], and [playbackModeTranscoding]"
-    },
     "reportQueueToServerSubtitle": "Mientras esté activo, Finamp enviará la cola del dispositivo al servidor. Esto puede mejorar el control de manera remota y permitir la recuperación de la cola desde el servidor. Siempre está habilitada si la opción 'Reproducir en' está habilitada.",
     "@reportQueueToServerSubtitle": {
         "description": "Description of the setting that toggles reporting of the current queue to the Jellyfin server"
@@ -552,26 +526,6 @@
     "volumeNormalizationModeSelectorTitle": "Modo de normalización de volumen",
     "@volumeNormalizationModeSelectorTitle": {
         "description": "Title for the dropdown that selects the replay gain mode"
-    },
-    "bitDepth": "Profundidad de Bits",
-    "@bitDepth": {
-        "description": "Label for the feature chips showing the bit depth of a track"
-    },
-    "size": "Tamaño",
-    "@size": {
-        "description": "Label for the feature chips showing the size (original file size or transcoded size, if available) of a track"
-    },
-    "showFeatureChipsToggleTitle": "Mostrar Información Avanzada",
-    "@showFeatureChipsToggleTitle": {
-        "description": "Title for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
-    "bitRate": "Tasa de Bits",
-    "@bitRate": {
-        "description": "Label for the feature chips showing the bit rate of a track"
-    },
-    "normalizationGain": "Ganancia",
-    "@normalizationGain": {
-        "description": "Label for the feature chips showing the normalization gain / LUFS offset of a track"
     },
     "shuffleAlbums": "Mezclar álbumes",
     "@shuffleAlbums": {
@@ -641,10 +595,6 @@
         "description": "Subtitle for the editor that allows the user to set the minimum padding around the album cover on the player screen."
     },
     "bufferSizeTitle": "Tamaño del búfer",
-    "playbackModeDirectPlaying": "Reproducción directa",
-    "@playbackModeDirectPlaying": {
-        "description": "Feature chip that is shown when tracks are being played directly from the server, without transcoding"
-    },
     "kiloBitsPerSecondLabel": "{bitrate} kbps",
     "@kiloBitsPerSecondLabel": {
         "description": "Label for the bitrate of a track or for transcoding. The value will be the bitrate in kilobits per second.",
@@ -655,10 +605,6 @@
             }
         }
     },
-    "playbackModeLocal": "Reproducción local",
-    "@playbackModeLocal": {
-        "description": "Feature chip that is shown when tracks are being played from local downloads, without using the server"
-    },
     "playlistActionsMenuButtonTooltip": "Toque para añadir a lista de reproducción. Toque largo para alternar favorito.",
     "@playlistActionsMenuButtonTooltip": {
         "description": "Tooltip for the (currently heart) button that opens the playlist actions menu / playlist picker by default and can toggle the favorite status on long press"
@@ -668,10 +614,6 @@
         "description": "Snackbar message that shows when the user successfully adds items to a playlist."
     },
     "bufferSizeSubtitle": "El tamaño para el búfer en MB. Requiere reinicio",
-    "playbackModeTranscoding": "Transcodificando",
-    "@playbackModeTranscoding": {
-        "description": "Feature chip that is shown when tracks are being transcoded by the server"
-    },
     "hours": "Horas",
     "seconds": "Segundos",
     "trackCountTooltip": "Canción {currentTrackIndex} de {totalTrackCount}",
@@ -730,15 +672,6 @@
     "playingFrom": "Reproduciendo desde",
     "@playingFrom": {
         "description": "Prefix shown before the name of the main queue source, like the album or playlist that was used to start playback. Example: \"Playing from {My Nice Playlist}\""
-    },
-    "playbackSpeedFeatureText": "Velocidad x{speed}",
-    "@playbackSpeedFeatureText": {
-        "description": "Label for the feature chip that is shown if the playback speed is different from x1, {speed} is the current playback speed.",
-        "placeholders": {
-            "speed": {
-                "type": "double"
-            }
-        }
     },
     "playbackSpeedDecreaseLabel": "Disminuir la velocidad de reproducción",
     "@playbackSpeedDecreaseLabel": {
@@ -1003,27 +936,9 @@
     "@downloadTranscodeCodecTitle": {
         "description": "Title for Select Download Codec dropdown"
     },
-    "numberAsBit": "{bit} bit",
-    "@numberAsBit": {
-        "description": "Value for the bit depth of a track, as amount of bit used",
-        "placeholders": {
-            "bit": {
-                "type": "int"
-            }
-        }
-    },
     "fontSizeOptionLarge": "Grande",
     "@fontSizeOptionLarge": {
         "description": "Font size option for things like the lyrics view. Large means a larger font size."
-    },
-    "numberAsKiloHertz": "{kiloHertz} kHz",
-    "@numberAsKiloHertz": {
-        "description": "Value for the sample rate of a track, in kilohertz",
-        "placeholders": {
-            "kiloHertz": {
-                "type": "double"
-            }
-        }
     },
     "quickActions": "Acciones Rápidas",
     "@quickActions": {
@@ -1324,10 +1239,6 @@
     },
     "keepScreenOnSubtitle": "Cuando mantener la pantalla encendida",
     "keepScreenOnWhilePluggedIn": "Mantener la Pantalla Encendida solo mientras este enchufado",
-    "showFeatureChipsToggleSubtitle": "Mostrar información avanzada de la canción como el códec, tasa de bits y más en la pantalla del reproductor.",
-    "@showFeatureChipsToggleSubtitle": {
-        "description": "Subtitle for the setting that controls if the feature chips showing advanced track info are shown on the player screen"
-    },
     "resetSettingsPromptLocal": "¿Quieres restaurar estos ajustes a sus valores predeterminados?",
     "@resetSettingsPromptLocal": {
         "description": "Prompt which gets shown when the user is about to reset all settings in the current settings window to their default values"
@@ -1640,16 +1551,6 @@
         "description": "Gets shown when there are no genres available for an album or artist"
     },
     "favorites": "Favoritos",
-    "currentVolumeFeatureText": "Volumen al {volume}%",
-    "@currentVolumeFeatureText": {
-        "description": "Label for the feature chip that is shown if the volume is not 100%",
-        "placeholders": {
-            "volume": {
-                "type": "int",
-                "description": "The current volume level, in percent"
-            }
-        }
-    },
     "playOnStaleDelay": "Tiempo de espera de sesión para \"Reproducir en\"",
     "@playOnStaleDelay": {
         "description": "Label for the setting that controls how long a PlayOn remote session is considered active"
