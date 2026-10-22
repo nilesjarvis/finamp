@@ -6,7 +6,6 @@ import 'package:balanced_text/balanced_text.dart';
 import 'package:finamp/components/Buttons/simple_button.dart';
 import 'package:finamp/components/PlayerScreen/control_area.dart';
 import 'package:finamp/components/PlayerScreen/player_screen_album_image.dart';
-import 'package:finamp/components/PlayerScreen/player_screen_appbar_title.dart';
 import 'package:finamp/components/PlayerScreen/player_split_screen_scaffold.dart';
 import 'package:finamp/components/PlayerScreen/queue_button.dart';
 import 'package:finamp/components/PlayerScreen/queue_list.dart';
@@ -37,7 +36,6 @@ import '../extensions/localizations.dart';
 import '../menus/components/icon_button_with_semantics.dart';
 
 const double _defaultToolbarHeight = 53.0;
-const int _defaultMaxToolbarLines = 2;
 
 class PlayerScreen extends StatelessWidget {
   const PlayerScreen({super.key});
@@ -141,12 +139,10 @@ class _PlayerScreenContent extends ConsumerWidget {
 
     var screenOrientation = MediaQuery.orientationOf(context);
     double toolbarHeight = _defaultToolbarHeight;
-    int maxToolbarLines = _defaultMaxToolbarLines;
 
     // If in landscape, only show 2 lines in toolbar instead of 3
     if (screenOrientation == Orientation.landscape) {
       toolbarHeight = 36.0;
-      maxToolbarLines = 1;
     }
 
     final metadata = ref.watch(currentTrackMetadataProvider).unwrapPrevious();
@@ -256,7 +252,6 @@ class _PlayerScreenContent extends ConsumerWidget {
                 scrolledUnderElevation: 0.0, // disable tint/shadow when content is scrolled under the app bar
                 centerTitle: true,
                 toolbarHeight: toolbarHeight,
-                title: PlayerScreenAppBarTitle(maxLines: maxToolbarLines),
                 leadingWidth: (isDesktop ? 40.0 : 48.0) * appbarActions.length,
                 leading: Row(children: appbarActions),
                 actions: [],
