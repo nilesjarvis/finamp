@@ -201,6 +201,23 @@ class HomeScreenSection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final sectionDisplayable = ref.watch(resolveSectionProvider(sectionInfo)).value;
 
+    // Don't render favorite-only sections (e.g. favorite tracks/albums) when the
+    // user has no favorites, they would just show an empty header.
+    final isFavoriteOnly =
+        sectionInfo.sortConfig.filters.length == 1 &&
+        sectionInfo.sortConfig.filters.first.type == ItemFilterType.isFavorite;
+    if (isFavoriteOnly &&
+        sectionDisplayable != null &&
+        sectionDisplayable is! UnavailableHomeSectionPlayable) {
+      final pageState = ref.watch(pagedContentProvider(sectionDisplayable));
+      if (pageState.items != null &&
+          !pageState.isLoading &&
+          pageState.error == null &&
+          pageState.items!.isEmpty) {
+        return const SliverToBoxAdapter(child: SizedBox.shrink());
+      }
+    }
+
     final viewPadding = MediaQuery.paddingOf(context);
     return SliverPadding(
       padding: const EdgeInsets.only(bottom: 20.0),
