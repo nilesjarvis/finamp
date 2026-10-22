@@ -137,12 +137,7 @@ class NowPlayingBar extends ConsumerWidget {
           var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: Curves.easeInOutQuad));
           var offsetAnimation = animation.drive(tween);
 
-          if (animation.status == AnimationStatus.reverse) {
-            // dismiss animation
-            return FadeTransition(opacity: animation, child: child);
-          } else {
-            return SlideTransition(position: offsetAnimation, child: child);
-          }
+          return SlideTransition(position: offsetAnimation, child: child);
         },
         settings: const RouteSettings(name: PlayerScreen.routeName),
       ),
